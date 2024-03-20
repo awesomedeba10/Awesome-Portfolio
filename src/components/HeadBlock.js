@@ -4,7 +4,7 @@ import { metaData } from "../utils/pageData";
 
 export default function HeadBlock({ ...optionalProps }) {
     return (
-        <div>
+        <>
             <Head>
                 <meta charSet="UTF-8" />
                 <meta
@@ -25,6 +25,6 @@ export default function HeadBlock({ ...optionalProps }) {
                 <link rel="apple-touch-icon" href={metaData.icon} />
                 <meta name="msapplication-TileImage" content={metaData.icon} />
             </Head>
-        </div>
+        </>
     );
 }
