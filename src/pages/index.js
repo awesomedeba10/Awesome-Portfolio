@@ -1,40 +1,25 @@
 import Link from "next/link";
-import Image from 'next/image';
+import { userData } from "../utils/pageData";
 
 export default function Home() {
     return (
-        <div className="tp-page-area sec-mar mt-xxl-10 mt-xl-8 mt-6">
+        <div className="tp-page-area mt-xxl-10 mt-xl-8 mt-6">
             <div className="container-fluid custom-container">
                 <div className="row">
                     <div className="col-xl-12">
                         <div className="tp-page-content" data-aos="zoom-in-down" data-aos-duration="1500">
                             <div className="tp-page-post">
-                                <div data-elementor-type="wp-page" data-elementor-id="23"
-                                    className="elementor elementor-23">
-                                    <div className="elementor-element elementor-element-e2d05fe e-con-full e-flex e-con e-parent"
-                                        data-id="e2d05fe" data-element_type="container"
-                                        data-settings="{&quot;content_width&quot;:&quot;full&quot;}"
-                                        data-core-v316-plus="true">
-                                        <div className="elementor-element elementor-element-91df618 container m-auto e-flex e-con-boxed e-con e-child"
-                                            data-id="91df618" data-element_type="container"
-                                            data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
+                                <div data-elementor-type="wp-page" data-elementor-id="56"
+                                    className="elementor">
+                                    <div className="elementor-element elementor-element-foremost-outer e-con-full e-flex e-con e-parent">
+                                        <div className="elementor-element elementor-element-outer container m-auto e-flex e-con-boxed e-con e-child">
                                             <div className="e-con-inner">
-                                                <div className="elementor-element elementor-element-712936d e-con-full e-flex e-con e-child"
-                                                    data-id="712936d" data-element_type="container"
-                                                    data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
-                                                    <div className="elementor-element elementor-element-9ce1984 e-flex e-con-boxed e-con e-child"
-                                                        data-id="9ce1984" data-element_type="container"
-                                                        data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
+                                                <div className="elementor-element elementor-element-inner e-con-full e-flex e-con e-child">
+                                                    <div className="elementor-element elementor-element-foremost-inner e-flex e-con-boxed e-con e-child">
                                                         <div className="e-con-inner">
-                                                            <div className="elementor-element elementor-element-6bafe0b e-con-full e-flex e-con e-child"
-                                                                data-id="6bafe0b" data-element_type="container"
-                                                                data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
-                                                                <div className="elementor-element elementor-element-9c6236b e-con-full e-flex e-con e-child"
-                                                                    data-id="9c6236b" data-element_type="container"
-                                                                    data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
-                                                                    <div className="elementor-element elementor-element-e816f07 elementor-widget elementor-widget-tp-biography"
-                                                                        data-id="e816f07" data-element_type="widget"
-                                                                        data-widget_type="tp-biography.default">
+                                                            <div className="elementor-element elementor-element-first-layer e-con-full e-flex e-con e-child">
+                                                                <div className="elementor-element elementor-element-second-layer e-con-full e-flex e-con e-child">
+                                                                    <div className="elementor-element elementor-element-third-layer elementor-widget elementor-widget-tp-biography">
                                                                         <div className="elementor-widget-container">
                                                                             <div className="lyla-box1  cmn-box py-xxl-8 py-xl-8 py-lg-8 py-5 px-xxl-8 px-xl-6 px-lg-4 px-6"
                                                                                 data-aos="zoom-in-down"
@@ -42,7 +27,7 @@ export default function Home() {
                                                                                 <div className="layla-thumb layla-thumbtwo m-auto text-center mt-4 mb-13"
                                                                                     data-aos="fade-up"
                                                                                     data-aos-duration="2000">
-                                                                                    <Image decoding="async" layout="fill"
+                                                                                    <img decoding="async"
                                                                                         src="/profile.png"
                                                                                         alt="image" className="radius100"/>
                                                                                     <div className="textcircle">
@@ -54,29 +39,29 @@ export default function Home() {
                                                                                     </div>
                                                                                 </div>
                                                                                 <div className="d-flex justify-content-center">
-                                                                                    <a href="about/index.html"
+                                                                                    <Link href="/about"
                                                                                         className="cmn-btn text-center justify-content-center gap-2 d-inline-flex align-items-center py-3 px-6 px-5">
                                                                                         <span className="n0-color">
-                                                                                            I’m Debanjan Ganguly </span>
+                                                                                            I’m {userData.name} </span>
                                                                                         <svg viewBox="0 0 32 32"
                                                                                             fill="none"
                                                                                             xmlns="http://www.w3.org/2000/svg">
                                                                                             <path
                                                                                                 d="M9.86625 8.42687L21.1863 4.65354C26.2663 2.96021 29.0263 5.73354 27.3463 10.8135L23.5729 22.1335C21.0396 29.7469 16.8796 29.7469 14.3463 22.1335L13.2262 18.7735L9.86625 17.6535C2.25292 15.1202 2.25292 10.9735 9.86625 8.42687Z"
                                                                                                 stroke="#9747FF"
-                                                                                                stroke-width="1.5"
-                                                                                                stroke-linecap="round"
+                                                                                                strokeWidth="1.5"
+                                                                                                strokeLinecap="round"
                                                                                                 stroke-linejoin="round" />
                                                                                             <path
                                                                                                 d="M13.4766 18.2007L18.2499 13.4141"
                                                                                                 stroke="#9747FF"
-                                                                                                stroke-width="1.5"
-                                                                                                stroke-linecap="round"
+                                                                                                strokeWidth="1.5"
+                                                                                                strokeLinecap="round"
                                                                                                 stroke-linejoin="round" />
                                                                                         </svg>
-                                                                                    </a>
+                                                                                    </Link>
                                                                                 </div>
-                                                                                <a href="about/index.html"
+                                                                                <Link href="/about"
                                                                                     className="d-flex mt-8 cmn-footarrow align-items-center justify-content-between">
                                                                                     <span
                                                                                         className="fw_500 fs-seven n0-color">
@@ -94,13 +79,13 @@ export default function Home() {
                                                                                                 fill="white" />
                                                                                         </svg>
                                                                                     </span>
-                                                                                </a>
+                                                                                </Link>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div className="elementor-element elementor-element-0e706a5 e-flex e-con-boxed e-con e-child"
-                                                                    data-id="0e706a5" data-element_type="container"
+                                                                    data-id="0e706a5" 
                                                                     data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
                                                                     <div className="e-con-inner">
                                                                         <div className="elementor-element elementor-element-ef27517 elementor-widget elementor-widget-tp-article"
@@ -135,7 +120,7 @@ export default function Home() {
                                                                                                 fill="white" />
                                                                                         </svg>
                                                                                     </span>
-                                                                                    <Image decoding="async" layout="fill"
+                                                                                    <img decoding="async"
                                                                                         src="/shapes/s-shape3.png"
                                                                                         alt="image" className="s-shape3"/>
                                                                                 </a>
@@ -145,15 +130,15 @@ export default function Home() {
                                                                 </div>
                                                             </div>
                                                             <div className="elementor-element elementor-element-4108db2 e-con-full e-flex e-con e-child"
-                                                                data-id="4108db2" data-element_type="container"
+                                                                data-id="4108db2" 
                                                                 data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
                                                                 <div className="elementor-element elementor-element-92766eb e-flex e-con-boxed e-con e-child"
-                                                                    data-id="92766eb" data-element_type="container"
+                                                                    data-id="92766eb" 
                                                                     data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
                                                                     <div className="e-con-inner">
                                                                         <div className="elementor-element elementor-element-1b23ef5 e-con-full e-flex e-con e-child"
                                                                             data-id="1b23ef5"
-                                                                            data-element_type="container"
+                                                                            
                                                                             data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
                                                                             <div className="elementor-element elementor-element-82afffe elementor-widget elementor-widget-tp-designation"
                                                                                 data-id="82afffe"
@@ -176,7 +161,7 @@ export default function Home() {
                                                                                                     className="fw_600">Business
                                                                                                     Analyst</a>
                                                                                             </h3>
-                                                                                            <Image decoding="async" layout="fill"
+                                                                                            <img decoding="async"
                                                                                                 src="/shapes/s-shape1.png"
                                                                                                 alt="image"
                                                                                                 className="s-shape1"/>
@@ -187,7 +172,7 @@ export default function Home() {
                                                                         </div>
                                                                         <div className="elementor-element elementor-element-43f9f55 e-flex e-con-boxed e-con e-child"
                                                                             data-id="43f9f55"
-                                                                            data-element_type="container"
+                                                                            
                                                                             data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
                                                                             <div className="e-con-inner">
                                                                                 <div className="elementor-element elementor-element-de56cb0 elementor-widget elementor-widget-tp-profile"
@@ -211,7 +196,7 @@ export default function Home() {
                                                                                                                 </svg>
                                                                                                             <span
                                                                                                                 className="shape-icon">
-                                                                                                                <Image decoding="async" layout="fill"
+                                                                                                                <img decoding="async"
                                                                                                                     src="/shapes/social-hover.png"
                                                                                                                     alt="image"/>
                                                                                                             </span>
@@ -220,15 +205,15 @@ export default function Home() {
                                                                                                     <li>
                                                                                                         <a href="https://www.instagram.com/"
                                                                                                             className="soci">
-                                                                                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
-                                                                                                                <defs><linearGradient x1="30.999" y1="16" x2="30.999" y2="55.342" gradientUnits="userSpaceOnUse" id="color-1_52539_gr1"><stop offset="0" stop-color="#6dc7ff"></stop><stop offset="1" stop-color="#e6abff"></stop></linearGradient><linearGradient x1="32" y1="5" x2="32" y2="59.167" gradientUnits="userSpaceOnUse" id="color-2_52539_gr2"><stop offset="0" stop-color="#1a6dff"></stop><stop offset="1" stop-color="#c822ff"></stop></linearGradient></defs><g transform="translate(48.64,48.64) scale(0.62,0.62)"><g fill-opacity="0" fill="#dddddd" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" textAnchor="none" style="mix-blend-mode: overlay"><path d="M-78.45161,334.45161v-412.90323h412.90323v412.90323z" id="bgRectangle"></path></g><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" textAnchor="none" style="mix-blend-mode: normal"><g transform="scale(4,4)"><path d="M25.008,56.007c-0.003,-0.368 -0.006,-1.962 -0.009,-3.454l-0.003,-1.55c-6.729,0.915 -8.358,-3.78 -8.376,-3.83c-0.934,-2.368 -2.211,-3.045 -2.266,-3.073l-0.124,-0.072c-0.463,-0.316 -1.691,-1.157 -1.342,-2.263c0.315,-0.997 1.536,-1.1 2.091,-1.082c3.074,0.215 4.63,2.978 4.694,3.095c1.569,2.689 3.964,2.411 5.509,1.844c0.144,-0.688 0.367,-1.32 0.659,-1.878c-4.956,-0.879 -10.571,-3.515 -10.571,-13.104c0,-2.633 0.82,-4.96 2.441,-6.929c-0.362,-1.206 -0.774,-3.666 0.446,-6.765l0.174,-0.442l0.452,-0.144c0.416,-0.137 2.688,-0.624 7.359,2.433c1.928,-0.494 3.969,-0.749 6.074,-0.759c2.115,0.01 4.158,0.265 6.09,0.759c4.667,-3.058 6.934,-2.565 7.351,-2.433l0.451,0.145l0.174,0.44c1.225,3.098 0.813,5.559 0.451,6.766c1.618,1.963 2.438,4.291 2.438,6.929c0,9.591 -5.621,12.219 -10.588,13.087c0.563,1.065 0.868,2.402 0.868,3.878c0,1.683 -0.007,7.204 -0.015,8.402l-2,-0.014c0.008,-1.196 0.015,-6.708 0.015,-8.389c0,-2.442 -0.943,-3.522 -1.35,-3.874l-1.73,-1.497l2.274,-0.253c5.205,-0.578 10.525,-2.379 10.525,-11.341c0,-2.33 -0.777,-4.361 -2.31,-6.036l-0.43,-0.469l0.242,-0.587c0.166,-0.401 0.894,-2.442 -0.043,-5.291c-0.758,0.045 -2.568,0.402 -5.584,2.447l-0.384,0.259l-0.445,-0.123c-1.863,-0.518 -3.938,-0.796 -6.001,-0.806c-2.052,0.01 -4.124,0.288 -5.984,0.806l-0.445,0.123l-0.383,-0.259c-3.019,-2.044 -4.833,-2.404 -5.594,-2.449c-0.935,2.851 -0.206,4.892 -0.04,5.293l0.242,0.587l-0.429,0.469c-1.536,1.681 -2.314,3.712 -2.314,6.036c0,8.958 5.31,10.77 10.504,11.361l2.252,0.256l-1.708,1.49c-0.372,0.325 -1.03,1.112 -1.254,2.727l-0.075,0.549l-0.506,0.227c-1.321,0.592 -5.839,2.162 -8.548,-2.485c-0.015,-0.025 -0.544,-0.945 -1.502,-1.557c0.646,0.639 1.433,1.673 2.068,3.287c0.066,0.19 1.357,3.622 7.28,2.339l1.206,-0.262l0.012,3.978c0.003,1.487 0.006,3.076 0.009,3.444z" fill="url(#color-1_52539_gr1)"></path><path d="M32,58c-14.337,0 -26,-11.663 -26,-26c0,-14.337 11.663,-26 26,-26c14.337,0 26,11.663 26,26c0,14.337 -11.663,26 -26,26zM32,8c-13.233,0 -24,10.767 -24,24c0,13.233 10.767,24 24,24c13.233,0 24,-10.767 24,-24c0,-13.233 -10.767,-24 -24,-24z" fill="url(#color-2_52539_gr2)"></path></g></g></g>
+                                                                                                            {/* <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+                                                                                                                <defs><linearGradient x1="30.999" y1="16" x2="30.999" y2="55.342" gradientUnits="userSpaceOnUse" id="color-1_52539_gr1"><stop offset="0" stop-color="#6dc7ff"></stop><stop offset="1" stop-color="#e6abff"></stop></linearGradient><linearGradient x1="32" y1="5" x2="32" y2="59.167" gradientUnits="userSpaceOnUse" id="color-2_52539_gr2"><stop offset="0" stop-color="#1a6dff"></stop><stop offset="1" stop-color="#c822ff"></stop></linearGradient></defs><g transform="translate(48.64,48.64) scale(0.62,0.62)"><g fill-opacity="0" fill="#dddddd" fill-rule="nonzero" stroke="none" strokeWidth="1" strokeLinecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" textAnchor="none" style={{ mixBlendMode: 'overlay' }}><path d="M-78.45161,334.45161v-412.90323h412.90323v412.90323z" id="bgRectangle"></path></g><g fill="none" fill-rule="nonzero" stroke="none" strokeWidth="1" strokeLinecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" textAnchor="none" style={{ mixBlendMode: 'normal' }}><g transform="scale(4,4)"><path d="M25.008,56.007c-0.003,-0.368 -0.006,-1.962 -0.009,-3.454l-0.003,-1.55c-6.729,0.915 -8.358,-3.78 -8.376,-3.83c-0.934,-2.368 -2.211,-3.045 -2.266,-3.073l-0.124,-0.072c-0.463,-0.316 -1.691,-1.157 -1.342,-2.263c0.315,-0.997 1.536,-1.1 2.091,-1.082c3.074,0.215 4.63,2.978 4.694,3.095c1.569,2.689 3.964,2.411 5.509,1.844c0.144,-0.688 0.367,-1.32 0.659,-1.878c-4.956,-0.879 -10.571,-3.515 -10.571,-13.104c0,-2.633 0.82,-4.96 2.441,-6.929c-0.362,-1.206 -0.774,-3.666 0.446,-6.765l0.174,-0.442l0.452,-0.144c0.416,-0.137 2.688,-0.624 7.359,2.433c1.928,-0.494 3.969,-0.749 6.074,-0.759c2.115,0.01 4.158,0.265 6.09,0.759c4.667,-3.058 6.934,-2.565 7.351,-2.433l0.451,0.145l0.174,0.44c1.225,3.098 0.813,5.559 0.451,6.766c1.618,1.963 2.438,4.291 2.438,6.929c0,9.591 -5.621,12.219 -10.588,13.087c0.563,1.065 0.868,2.402 0.868,3.878c0,1.683 -0.007,7.204 -0.015,8.402l-2,-0.014c0.008,-1.196 0.015,-6.708 0.015,-8.389c0,-2.442 -0.943,-3.522 -1.35,-3.874l-1.73,-1.497l2.274,-0.253c5.205,-0.578 10.525,-2.379 10.525,-11.341c0,-2.33 -0.777,-4.361 -2.31,-6.036l-0.43,-0.469l0.242,-0.587c0.166,-0.401 0.894,-2.442 -0.043,-5.291c-0.758,0.045 -2.568,0.402 -5.584,2.447l-0.384,0.259l-0.445,-0.123c-1.863,-0.518 -3.938,-0.796 -6.001,-0.806c-2.052,0.01 -4.124,0.288 -5.984,0.806l-0.445,0.123l-0.383,-0.259c-3.019,-2.044 -4.833,-2.404 -5.594,-2.449c-0.935,2.851 -0.206,4.892 -0.04,5.293l0.242,0.587l-0.429,0.469c-1.536,1.681 -2.314,3.712 -2.314,6.036c0,8.958 5.31,10.77 10.504,11.361l2.252,0.256l-1.708,1.49c-0.372,0.325 -1.03,1.112 -1.254,2.727l-0.075,0.549l-0.506,0.227c-1.321,0.592 -5.839,2.162 -8.548,-2.485c-0.015,-0.025 -0.544,-0.945 -1.502,-1.557c0.646,0.639 1.433,1.673 2.068,3.287c0.066,0.19 1.357,3.622 7.28,2.339l1.206,-0.262l0.012,3.978c0.003,1.487 0.006,3.076 0.009,3.444z" fill="url(#color-1_52539_gr1)"></path><path d="M32,58c-14.337,0 -26,-11.663 -26,-26c0,-14.337 11.663,-26 26,-26c14.337,0 26,11.663 26,26c0,14.337 -11.663,26 -26,26zM32,8c-13.233,0 -24,10.767 -24,24c0,13.233 10.767,24 24,24c13.233,0 24,-10.767 24,-24c0,-13.233 -10.767,-24 -24,-24z" fill="url(#color-2_52539_gr2)"></path></g></g></g>
                                                                                                                 </svg>
                                                                                                             <span
                                                                                                                 className="shape-icon">
-                                                                                                                <Image decoding="async" layout="fill"
+                                                                                                                <img decoding="async"
                                                                                                                     src="/shapes/social-hover.png"
                                                                                                                     alt="image"/>
-                                                                                                            </span>
+                                                                                                            </span> */}
                                                                                                         </a>
                                                                                                     </li>
                                                                                                 </ul>
@@ -262,7 +247,7 @@ export default function Home() {
                                                                     </div>
                                                                 </div>
                                                                 <div className="elementor-element elementor-element-dbb708c e-flex e-con-boxed e-con e-child"
-                                                                    data-id="dbb708c" data-element_type="container"
+                                                                    data-id="dbb708c" 
                                                                     data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
                                                                     <div className="e-con-inner">
                                                                         <div className="elementor-element elementor-element-57ef5a3 elementor-widget elementor-widget-tp-service"
@@ -282,7 +267,7 @@ export default function Home() {
                                                                                                 className="text-center">
                                                                                                 <span
                                                                                                     className="text-center d-block">
-                                                                                                    <Image decoding="async" layout="fill"
+                                                                                                    <img decoding="async"
                                                                                                         src="/shapes/ui.png"
                                                                                                         alt="image"/>
                                                                                                 </span>
@@ -296,7 +281,7 @@ export default function Home() {
                                                                                                 className="text-center">
                                                                                                 <span
                                                                                                     className="text-center d-block">
-                                                                                                    <Image decoding="async" layout="fill"
+                                                                                                    <img decoding="async"
                                                                                                         src="/shapes/digital.png"
                                                                                                         alt="image"/>
                                                                                                 </span>
@@ -311,7 +296,7 @@ export default function Home() {
                                                                                                 className="text-center">
                                                                                                 <span
                                                                                                     className="text-center d-block">
-                                                                                                    <Image decoding="async" layout="fill"
+                                                                                                    <img decoding="async"
                                                                                                         src="/shapes/brand.png"
                                                                                                         alt="image"/>
                                                                                                 </span>
@@ -325,7 +310,7 @@ export default function Home() {
                                                                                                 className="text-center">
                                                                                                 <span
                                                                                                     className="text-center d-block">
-                                                                                                    <Image decoding="async" layout="fill"
+                                                                                                    <img decoding="async" 
                                                                                                         src="/shapes/web.png"
                                                                                                         alt="image"/>
                                                                                                 </span>
@@ -340,10 +325,9 @@ export default function Home() {
                                                                                         className="d-flex align-items-center gap-xxl-3 gap-1">
                                                                                         <span className="goodthingking">
                                                                                             Things I’m good at </span>
-                                                                                        <Image decoding="async"
+                                                                                        <img decoding="async"
                                                                                             src="/shapes/goods.png"
                                                                                             alt="image"
-                                                                                            layout="fill"
                                                                                             className="goodthingking-img"/>
                                                                                     </a>
                                                                                     <a href="service/index.html"
@@ -365,7 +349,7 @@ export default function Home() {
                                                                                             </svg>
                                                                                         </span>
                                                                                     </a>
-                                                                                    <Image decoding="async" layout="fill"
+                                                                                    <img decoding="async"
                                                                                         src="/shapes/s-shape1.png"
                                                                                         alt="image" className="s-shape1"/>
                                                                                 </div>
@@ -377,11 +361,11 @@ export default function Home() {
                                                         </div>
                                                     </div>
                                                     <div className="elementor-element elementor-element-68b59ea e-flex e-con-boxed e-con e-child"
-                                                        data-id="68b59ea" data-element_type="container"
+                                                        data-id="68b59ea" 
                                                         data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
                                                         <div className="e-con-inner">
                                                             <div className="elementor-element elementor-element-7c5c59f e-con-full e-flex e-con e-child"
-                                                                data-id="7c5c59f" data-element_type="container"
+                                                                data-id="7c5c59f" 
                                                                 data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
                                                                 <div className="elementor-element elementor-element-e755dde elementor-widget elementor-widget-tp-skill"
                                                                     data-id="e755dde" data-element_type="widget"
@@ -539,32 +523,32 @@ export default function Home() {
                                                                                                                 <path
                                                                                                                     d="M19.9974 29.3327H11.9974C5.33073 29.3327 2.66406 26.666 2.66406 19.9993V11.9993C2.66406 5.33268 5.33073 2.66602 11.9974 2.66602H19.9974C26.6641 2.66602 29.3307 5.33268 29.3307 11.9993V19.9993C29.3307 26.666 26.6641 29.3327 19.9974 29.3327Z"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeWidth="1.5"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M24.0031 11.334V20.8007H21.6031C20.2698 20.8007 19.2031 19.734 19.2031 18.4007C19.2031 17.0673 20.2698 16.0007 21.6031 16.0007H24.0031"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M8 11.334L15.6 20.6673"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M15.6 11.334L8 20.6673"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                             </svg>
@@ -582,24 +566,24 @@ export default function Home() {
                                                                                                                 <path
                                                                                                                     d="M19.9974 29.3327H11.9974C5.33073 29.3327 2.66406 26.666 2.66406 19.9993V11.9993C2.66406 5.33268 5.33073 2.66602 11.9974 2.66602H19.9974C26.6641 2.66602 29.3307 5.33268 29.3307 11.9993V19.9993C29.3307 26.666 26.6641 29.3327 19.9974 29.3327Z"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeWidth="1.5"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M10 21.3327V10.666H12.6667C14.1333 10.666 15.3333 11.866 15.3333 13.3327C15.3333 14.7993 14.1333 15.9993 12.6667 15.9993H10"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M21.9974 14.666H20.2641C19.3307 14.666 18.6641 15.466 18.6641 16.266C18.6641 17.1993 19.4641 17.866 20.2641 17.866C21.1974 17.866 21.8641 18.666 21.8641 19.466C21.8641 20.3993 21.0641 21.066 20.2641 21.066H18.6641"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                             </svg>
@@ -617,37 +601,37 @@ export default function Home() {
                                                                                                                 <path
                                                                                                                     d="M8.92969 21.3327L13.5964 10.666L18.3964 21.3327"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M10 17.7324H17.2"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M21.7344 21.3342V14.2676"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M19.9974 29.3327H11.9974C5.33073 29.3327 2.66406 26.666 2.66406 19.9993V11.9993C2.66406 5.33268 5.33073 2.66602 11.9974 2.66602H19.9974C26.6641 2.66602 29.3307 5.33268 29.3307 11.9993V19.9993C29.3307 26.666 26.6641 29.3327 19.9974 29.3327Z"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeWidth="1.5"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M21.7891 10.7129V10.7129"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="2"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeWidth="2"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                             </svg>
@@ -665,32 +649,32 @@ export default function Home() {
                                                                                                                 <path
                                                                                                                     d="M19.9974 29.3327H11.9974C5.33073 29.3327 2.66406 26.666 2.66406 19.9993V11.9993C2.66406 5.33268 5.33073 2.66602 11.9974 2.66602H19.9974C26.6641 2.66602 29.3307 5.33268 29.3307 11.9993V19.9993C29.3307 26.666 26.6641 29.3327 19.9974 29.3327Z"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeWidth="1.5"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M24.0031 11.334V20.8007H21.6031C20.2698 20.8007 19.2031 19.734 19.2031 18.4007C19.2031 17.0673 20.2698 16.0007 21.6031 16.0007H24.0031"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M8 11.334L15.6 20.6673"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M15.6 11.334L8 20.6673"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                             </svg>
@@ -708,24 +692,24 @@ export default function Home() {
                                                                                                                 <path
                                                                                                                     d="M19.9974 29.3327H11.9974C5.33073 29.3327 2.66406 26.666 2.66406 19.9993V11.9993C2.66406 5.33268 5.33073 2.66602 11.9974 2.66602H19.9974C26.6641 2.66602 29.3307 5.33268 29.3307 11.9993V19.9993C29.3307 26.666 26.6641 29.3327 19.9974 29.3327Z"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeWidth="1.5"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M10 21.3327V10.666H12.6667C14.1333 10.666 15.3333 11.866 15.3333 13.3327C15.3333 14.7993 14.1333 15.9993 12.6667 15.9993H10"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M21.9974 14.666H20.2641C19.3307 14.666 18.6641 15.466 18.6641 16.266C18.6641 17.1993 19.4641 17.866 20.2641 17.866C21.1974 17.866 21.8641 18.666 21.8641 19.466C21.8641 20.3993 21.0641 21.066 20.2641 21.066H18.6641"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                             </svg>
@@ -743,37 +727,37 @@ export default function Home() {
                                                                                                                 <path
                                                                                                                     d="M8.92969 21.3327L13.5964 10.666L18.3964 21.3327"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M10 17.7324H17.2"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M21.7344 21.3342V14.2676"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M19.9974 29.3327H11.9974C5.33073 29.3327 2.66406 26.666 2.66406 19.9993V11.9993C2.66406 5.33268 5.33073 2.66602 11.9974 2.66602H19.9974C26.6641 2.66602 29.3307 5.33268 29.3307 11.9993V19.9993C29.3307 26.666 26.6641 29.3327 19.9974 29.3327Z"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeWidth="1.5"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M21.7891 10.7129V10.7129"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="2"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeWidth="2"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                             </svg>
@@ -791,17 +775,17 @@ export default function Home() {
                                                                                                                 <path
                                                                                                                     d="M6.66406 2.66602L25.3307 21.3327H6.66406V11.9993H25.3307V2.66602H6.66406Z"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M15.9974 21.334V29.334L6.66406 21.334H15.9974Z"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                             </svg>
@@ -819,32 +803,32 @@ export default function Home() {
                                                                                                                 <path
                                                                                                                     d="M19.9974 29.3327H11.9974C5.33073 29.3327 2.66406 26.666 2.66406 19.9993V11.9993C2.66406 5.33268 5.33073 2.66602 11.9974 2.66602H19.9974C26.6641 2.66602 29.3307 5.33268 29.3307 11.9993V19.9993C29.3307 26.666 26.6641 29.3327 19.9974 29.3327Z"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeWidth="1.5"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M24.0031 11.334V20.8007H21.6031C20.2698 20.8007 19.2031 19.734 19.2031 18.4007C19.2031 17.0673 20.2698 16.0007 21.6031 16.0007H24.0031"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M8 11.334L15.6 20.6673"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M15.6 11.334L8 20.6673"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                             </svg>
@@ -862,32 +846,32 @@ export default function Home() {
                                                                                                                 <path
                                                                                                                     d="M19.9974 29.3327H11.9974C5.33073 29.3327 2.66406 26.666 2.66406 19.9993V11.9993C2.66406 5.33268 5.33073 2.66602 11.9974 2.66602H19.9974C26.6641 2.66602 29.3307 5.33268 29.3307 11.9993V19.9993C29.3307 26.666 26.6641 29.3327 19.9974 29.3327Z"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeWidth="1.5"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M24.0031 11.334V20.8007H21.6031C20.2698 20.8007 19.2031 19.734 19.2031 18.4007C19.2031 17.0673 20.2698 16.0007 21.6031 16.0007H24.0031"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M8 11.334L15.6 20.6673"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M15.6 11.334L8 20.6673"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                             </svg>
@@ -905,17 +889,17 @@ export default function Home() {
                                                                                                                 <path
                                                                                                                     d="M6.66406 2.66602L25.3307 21.3327H6.66406V11.9993H25.3307V2.66602H6.66406Z"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M15.9974 21.334V29.334L6.66406 21.334H15.9974Z"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                             </svg>
@@ -933,24 +917,24 @@ export default function Home() {
                                                                                                                 <path
                                                                                                                     d="M19.9974 29.3327H11.9974C5.33073 29.3327 2.66406 26.666 2.66406 19.9993V11.9993C2.66406 5.33268 5.33073 2.66602 11.9974 2.66602H19.9974C26.6641 2.66602 29.3307 5.33268 29.3307 11.9993V19.9993C29.3307 26.666 26.6641 29.3327 19.9974 29.3327Z"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeWidth="1.5"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M10 21.3327V10.666H12.6667C14.1333 10.666 15.3333 11.866 15.3333 13.3327C15.3333 14.7993 14.1333 15.9993 12.6667 15.9993H10"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M21.9974 14.666H20.2641C19.3307 14.666 18.6641 15.466 18.6641 16.266C18.6641 17.1993 19.4641 17.866 20.2641 17.866C21.1974 17.866 21.8641 18.666 21.8641 19.466C21.8641 20.3993 21.0641 21.066 20.2641 21.066H18.6641"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                             </svg>
@@ -968,37 +952,37 @@ export default function Home() {
                                                                                                                 <path
                                                                                                                     d="M8.92969 21.3327L13.5964 10.666L18.3964 21.3327"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M10 17.7324H17.2"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M21.7344 21.3342V14.2676"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M19.9974 29.3327H11.9974C5.33073 29.3327 2.66406 26.666 2.66406 19.9993V11.9993C2.66406 5.33268 5.33073 2.66602 11.9974 2.66602H19.9974C26.6641 2.66602 29.3307 5.33268 29.3307 11.9993V19.9993C29.3307 26.666 26.6641 29.3327 19.9974 29.3327Z"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeWidth="1.5"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M21.7891 10.7129V10.7129"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="2"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeWidth="2"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                             </svg>
@@ -1016,32 +1000,32 @@ export default function Home() {
                                                                                                                 <path
                                                                                                                     d="M19.9974 29.3327H11.9974C5.33073 29.3327 2.66406 26.666 2.66406 19.9993V11.9993C2.66406 5.33268 5.33073 2.66602 11.9974 2.66602H19.9974C26.6641 2.66602 29.3307 5.33268 29.3307 11.9993V19.9993C29.3307 26.666 26.6641 29.3327 19.9974 29.3327Z"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeWidth="1.5"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M24.0031 11.334V20.8007H21.6031C20.2698 20.8007 19.2031 19.734 19.2031 18.4007C19.2031 17.0673 20.2698 16.0007 21.6031 16.0007H24.0031"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M8 11.334L15.6 20.6673"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M15.6 11.334L8 20.6673"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                             </svg>
@@ -1059,24 +1043,24 @@ export default function Home() {
                                                                                                                 <path
                                                                                                                     d="M19.9974 29.3327H11.9974C5.33073 29.3327 2.66406 26.666 2.66406 19.9993V11.9993C2.66406 5.33268 5.33073 2.66602 11.9974 2.66602H19.9974C26.6641 2.66602 29.3307 5.33268 29.3307 11.9993V19.9993C29.3307 26.666 26.6641 29.3327 19.9974 29.3327Z"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeWidth="1.5"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M10 21.3327V10.666H12.6667C14.1333 10.666 15.3333 11.866 15.3333 13.3327C15.3333 14.7993 14.1333 15.9993 12.6667 15.9993H10"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M21.9974 14.666H20.2641C19.3307 14.666 18.6641 15.466 18.6641 16.266C18.6641 17.1993 19.4641 17.866 20.2641 17.866C21.1974 17.866 21.8641 18.666 21.8641 19.466C21.8641 20.3993 21.0641 21.066 20.2641 21.066H18.6641"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                             </svg>
@@ -1094,17 +1078,17 @@ export default function Home() {
                                                                                                                 <path
                                                                                                                     d="M6.66406 2.66602L25.3307 21.3327H6.66406V11.9993H25.3307V2.66602H6.66406Z"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M15.9974 21.334V29.334L6.66406 21.334H15.9974Z"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                             </svg>
@@ -1122,32 +1106,32 @@ export default function Home() {
                                                                                                                 <path
                                                                                                                     d="M19.9974 29.3327H11.9974C5.33073 29.3327 2.66406 26.666 2.66406 19.9993V11.9993C2.66406 5.33268 5.33073 2.66602 11.9974 2.66602H19.9974C26.6641 2.66602 29.3307 5.33268 29.3307 11.9993V19.9993C29.3307 26.666 26.6641 29.3327 19.9974 29.3327Z"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeWidth="1.5"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M24.0031 11.334V20.8007H21.6031C20.2698 20.8007 19.2031 19.734 19.2031 18.4007C19.2031 17.0673 20.2698 16.0007 21.6031 16.0007H24.0031"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M8 11.334L15.6 20.6673"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M15.6 11.334L8 20.6673"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                             </svg>
@@ -1165,37 +1149,37 @@ export default function Home() {
                                                                                                                 <path
                                                                                                                     d="M8.92969 21.3327L13.5964 10.666L18.3964 21.3327"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M10 17.7324H17.2"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M21.7344 21.3342V14.2676"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M19.9974 29.3327H11.9974C5.33073 29.3327 2.66406 26.666 2.66406 19.9993V11.9993C2.66406 5.33268 5.33073 2.66602 11.9974 2.66602H19.9974C26.6641 2.66602 29.3307 5.33268 29.3307 11.9993V19.9993C29.3307 26.666 26.6641 29.3327 19.9974 29.3327Z"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeWidth="1.5"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M21.7891 10.7129V10.7129"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="2"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeWidth="2"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                             </svg>
@@ -1213,24 +1197,24 @@ export default function Home() {
                                                                                                                 <path
                                                                                                                     d="M19.9974 29.3327H11.9974C5.33073 29.3327 2.66406 26.666 2.66406 19.9993V11.9993C2.66406 5.33268 5.33073 2.66602 11.9974 2.66602H19.9974C26.6641 2.66602 29.3307 5.33268 29.3307 11.9993V19.9993C29.3307 26.666 26.6641 29.3327 19.9974 29.3327Z"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeWidth="1.5"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M10 21.3327V10.666H12.6667C14.1333 10.666 15.3333 11.866 15.3333 13.3327C15.3333 14.7993 14.1333 15.9993 12.6667 15.9993H10"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M21.9974 14.666H20.2641C19.3307 14.666 18.6641 15.466 18.6641 16.266C18.6641 17.1993 19.4641 17.866 20.2641 17.866C21.1974 17.866 21.8641 18.666 21.8641 19.466C21.8641 20.3993 21.0641 21.066 20.2641 21.066H18.6641"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                             </svg>
@@ -1248,24 +1232,24 @@ export default function Home() {
                                                                                                                 <path
                                                                                                                     d="M19.9974 29.3327H11.9974C5.33073 29.3327 2.66406 26.666 2.66406 19.9993V11.9993C2.66406 5.33268 5.33073 2.66602 11.9974 2.66602H19.9974C26.6641 2.66602 29.3307 5.33268 29.3307 11.9993V19.9993C29.3307 26.666 26.6641 29.3327 19.9974 29.3327Z"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeWidth="1.5"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M10 21.3327V10.666H12.6667C14.1333 10.666 15.3333 11.866 15.3333 13.3327C15.3333 14.7993 14.1333 15.9993 12.6667 15.9993H10"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M21.9974 14.666H20.2641C19.3307 14.666 18.6641 15.466 18.6641 16.266C18.6641 17.1993 19.4641 17.866 20.2641 17.866C21.1974 17.866 21.8641 18.666 21.8641 19.466C21.8641 20.3993 21.0641 21.066 20.2641 21.066H18.6641"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                             </svg>
@@ -1283,37 +1267,37 @@ export default function Home() {
                                                                                                                 <path
                                                                                                                     d="M8.92969 21.3327L13.5964 10.666L18.3964 21.3327"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M10 17.7324H17.2"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M21.7344 21.3342V14.2676"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M19.9974 29.3327H11.9974C5.33073 29.3327 2.66406 26.666 2.66406 19.9993V11.9993C2.66406 5.33268 5.33073 2.66602 11.9974 2.66602H19.9974C26.6641 2.66602 29.3307 5.33268 29.3307 11.9993V19.9993C29.3307 26.666 26.6641 29.3327 19.9974 29.3327Z"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeWidth="1.5"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M21.7891 10.7129V10.7129"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="2"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeWidth="2"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                             </svg>
@@ -1331,37 +1315,37 @@ export default function Home() {
                                                                                                                 <path
                                                                                                                     d="M8.92969 21.3327L13.5964 10.666L18.3964 21.3327"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M10 17.7324H17.2"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M21.7344 21.3342V14.2676"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M19.9974 29.3327H11.9974C5.33073 29.3327 2.66406 26.666 2.66406 19.9993V11.9993C2.66406 5.33268 5.33073 2.66602 11.9974 2.66602H19.9974C26.6641 2.66602 29.3307 5.33268 29.3307 11.9993V19.9993C29.3307 26.666 26.6641 29.3327 19.9974 29.3327Z"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeWidth="1.5"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M21.7891 10.7129V10.7129"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="2"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeWidth="2"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                             </svg>
@@ -1379,37 +1363,37 @@ export default function Home() {
                                                                                                                 <path
                                                                                                                     d="M8.92969 21.3327L13.5964 10.666L18.3964 21.3327"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M10 17.7324H17.2"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M21.7344 21.3342V14.2676"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M19.9974 29.3327H11.9974C5.33073 29.3327 2.66406 26.666 2.66406 19.9993V11.9993C2.66406 5.33268 5.33073 2.66602 11.9974 2.66602H19.9974C26.6641 2.66602 29.3307 5.33268 29.3307 11.9993V19.9993C29.3307 26.666 26.6641 29.3327 19.9974 29.3327Z"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeWidth="1.5"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M21.7891 10.7129V10.7129"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="2"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeWidth="2"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                             </svg>
@@ -1427,32 +1411,32 @@ export default function Home() {
                                                                                                                 <path
                                                                                                                     d="M19.9974 29.3327H11.9974C5.33073 29.3327 2.66406 26.666 2.66406 19.9993V11.9993C2.66406 5.33268 5.33073 2.66602 11.9974 2.66602H19.9974C26.6641 2.66602 29.3307 5.33268 29.3307 11.9993V19.9993C29.3307 26.666 26.6641 29.3327 19.9974 29.3327Z"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeWidth="1.5"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M24.0031 11.334V20.8007H21.6031C20.2698 20.8007 19.2031 19.734 19.2031 18.4007C19.2031 17.0673 20.2698 16.0007 21.6031 16.0007H24.0031"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M8 11.334L15.6 20.6673"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                                 <path
                                                                                                                     d="M15.6 11.334L8 20.6673"
                                                                                                                     stroke="#0A090D"
-                                                                                                                    stroke-width="1.5"
+                                                                                                                    strokeWidth="1.5"
                                                                                                                     stroke-miterlimit="10"
-                                                                                                                    stroke-linecap="round"
+                                                                                                                    strokeLinecap="round"
                                                                                                                     stroke-linejoin="round">
                                                                                                                 </path>
                                                                                                             </svg>
@@ -1469,7 +1453,7 @@ export default function Home() {
                                                                 </div>
                                                             </div>
                                                             <div className="elementor-element elementor-element-60af753 e-con-full e-flex e-con e-child"
-                                                                data-id="60af753" data-element_type="container"
+                                                                data-id="60af753" 
                                                                 data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
                                                                 <div className="elementor-element elementor-element-573d08d elementor-widget elementor-widget-tp-workwith"
                                                                     data-id="573d08d" data-element_type="widget"
@@ -1506,26 +1490,22 @@ export default function Home() {
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div className="elementor-element elementor-element-bb624d5 e-con-full e-flex e-con e-child"
-                                                    data-id="bb624d5" data-element_type="container"
-                                                    data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
-                                                    <div className="elementor-element elementor-element-3aed461 e-con-full e-flex e-con e-child"
-                                                        data-id="3aed461" data-element_type="container"
-                                                        data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
-                                                        <div className="elementor-element elementor-element-4d61487 elementor-widget elementor-widget-tp-marque"
+                                                <div className="elementor-element elementor-element-resume-outer e-con-full e-flex e-con e-child">
+                                                    <div className="elementor-element elementor-element-middle e-con-full e-flex e-con e-child">
+                                                        <div className="elementor-element elementor-element-resume-inner elementor-widget elementor-widget-tp-marque"
                                                             data-id="4d61487" data-element_type="widget"
                                                             data-widget_type="tp-marque.default">
                                                             <div className="elementor-widget-container">
                                                                 <div className="cmn-box feature-box freature-boxone position-relative py-xxl-6 py-xl-6 py-lg-6 py-5 px-xxl-4 px-3"
                                                                     data-aos="flip-up" data-aos-duration="1000">
-                                                                    <span className="clropa">Here's my Résumé, in case... </span>
+                                                                    <span className="clropa">Here`&apos`s my Résumé, in case... </span>
                                                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" height="1.56rem" width="1.87rem"><path d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z"/></svg>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div className="elementor-element elementor-element-e6d7831 e-con-full e-flex e-con e-child"
-                                                        data-id="e6d7831" data-element_type="container"
+                                                        data-id="e6d7831" 
                                                         data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
                                                         <div className="elementor-element elementor-element-32efc2c elementor-widget elementor-widget-tp-ex"
                                                             data-id="32efc2c" data-element_type="widget"
@@ -1574,7 +1554,7 @@ export default function Home() {
                                                             </div>
                                                         </div>
                                                         <div className="elementor-element elementor-element-a94b248 e-con-full e-flex e-con e-child"
-                                                            data-id="a94b248" data-element_type="container"
+                                                            data-id="a94b248" 
                                                             data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
                                                             <div className="elementor-element elementor-element-e705f63 elementor-widget elementor-widget-tp-work"
                                                                 data-id="e705f63" data-element_type="widget"
@@ -1592,7 +1572,7 @@ export default function Home() {
                                                                             </span>
                                                                             <span
                                                                                 className="work-thumb mb-4 m-auto text-center all-proje199s">
-                                                                                <Image decoding="async" layout="fill"
+                                                                                <img decoding="async"
                                                                                     src="/shapes/latest-work1.png"
                                                                                     alt="image" className="radius12"/>
                                                                             </span>
