@@ -1,12 +1,5 @@
 "use client";
 
-// import "bootstrap/dist/css/bootstrap.min.css";
-import "animate.css/animate.min.css";
-import "aos/dist/aos.css";
-import "@fortawesome/fontawesome-free/css/all.min.css";
-import "magnific-popup/dist/magnific-popup.css";
-import "swiper/swiper-bundle.css";
-
 import jQuery from "jquery";
 import Aos from "aos";
 import Swiper from 'swiper';
@@ -58,8 +51,6 @@ export default function initImports() {
     });
 
     const text = document.querySelector(".text");
-    console.log("Hiiiii");
-    console.log(text);
     let formatted_text = text.innerText + " "
     let angle = 360 / formatted_text.length
     text.innerHTML = formatted_text.split("")
@@ -461,16 +452,4 @@ export default function initImports() {
             $(this).next(".content-area").slideToggle();
         }
     });
-
-    function getViewportDimensions() {
-        var width = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
-        var height = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
-        return { width: width, height: height };
-      }
-      
-      // Usage example
-      var viewportDimensions = getViewportDimensions();
-      console.log("Viewport width:", viewportDimensions.width);
-      console.log("Viewport height:", viewportDimensions.height);
-      console.log(window.outerWidth);
 }

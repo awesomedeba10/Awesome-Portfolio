@@ -1,9 +1,13 @@
 import Link from "next/link";
 import { userData } from "../utils/pageData";
+import { vollkorn } from "../utils/fonts";
+
+import ElementFooterLink from "../components/ElementFooterLink";
+import SocialProfileList from "../components/SocialProfileList";
 
 export default function Home() {
     return (
-        <div className="tp-page-area mt-xxl-10 mt-xl-8 mt-6">
+        <div className={`tp-page-area mt-xxl-10 mt-xl-8 mt-6 ${vollkorn.className}`}>
             <div className="container-fluid custom-container">
                 <div className="row">
                     <div className="col-xl-12">
@@ -21,14 +25,12 @@ export default function Home() {
                                                                 <div className="elementor-element elementor-element-second-layer e-con-full e-flex e-con e-child">
                                                                     <div className="elementor-element elementor-element-third-layer elementor-widget elementor-widget-tp-biography">
                                                                         <div className="elementor-widget-container">
-                                                                            <div className="lyla-box1  cmn-box py-xxl-8 py-xl-8 py-lg-8 py-5 px-xxl-8 px-xl-6 px-lg-4 px-6"
-                                                                                data-aos="zoom-in-down"
-                                                                                data-aos-duration="1500">
-                                                                                <div className="layla-thumb layla-thumbtwo m-auto text-center mt-4 mb-13"
+                                                                            <div className="lyla-box1 cmn-box py-xxl-6 py-xl-6 py-lg-6 py-5 px-xxl-8 px-xl-6 px-lg-4 px-6">
+                                                                                <div className="justify-center flex layla-thumb layla-thumbtwo m-auto text-center mt-4 mb-13"
                                                                                     data-aos="fade-up"
                                                                                     data-aos-duration="2000">
                                                                                     <img decoding="async"
-                                                                                        src="/profile.png"
+                                                                                        src="/profile.webp"
                                                                                         alt="image" className="radius100"/>
                                                                                     <div className="textcircle">
                                                                                         <div className="text">
@@ -40,46 +42,13 @@ export default function Home() {
                                                                                 </div>
                                                                                 <div className="d-flex justify-content-center">
                                                                                     <Link href="/about"
-                                                                                        className="cmn-btn text-center justify-content-center gap-2 d-inline-flex align-items-center py-3 px-6 px-5">
+                                                                                        className="cmn-btn text-center justify-content-center gap-2 d-inline-flex align-items-center py-2 px-4">
                                                                                         <span className="n0-color">
                                                                                             I’m {userData.name} </span>
-                                                                                        <svg viewBox="0 0 32 32"
-                                                                                            fill="none"
-                                                                                            xmlns="http://www.w3.org/2000/svg">
-                                                                                            <path
-                                                                                                d="M9.86625 8.42687L21.1863 4.65354C26.2663 2.96021 29.0263 5.73354 27.3463 10.8135L23.5729 22.1335C21.0396 29.7469 16.8796 29.7469 14.3463 22.1335L13.2262 18.7735L9.86625 17.6535C2.25292 15.1202 2.25292 10.9735 9.86625 8.42687Z"
-                                                                                                stroke="#9747FF"
-                                                                                                strokeWidth="1.5"
-                                                                                                strokeLinecap="round"
-                                                                                                stroke-linejoin="round" />
-                                                                                            <path
-                                                                                                d="M13.4766 18.2007L18.2499 13.4141"
-                                                                                                stroke="#9747FF"
-                                                                                                strokeWidth="1.5"
-                                                                                                strokeLinecap="round"
-                                                                                                stroke-linejoin="round" />
-                                                                                        </svg>
+                                                                                            <i class="icon fa-regular fa-hand-peace"></i>
                                                                                     </Link>
                                                                                 </div>
-                                                                                <Link href="/about"
-                                                                                    className="d-flex mt-8 cmn-footarrow align-items-center justify-content-between">
-                                                                                    <span
-                                                                                        className="fw_500 fs-seven n0-color">
-                                                                                        The Scoop on Me </span>
-                                                                                    <span className="cmn-svg40">
-                                                                                        <svg width="58" height="40"
-                                                                                            viewBox="0 0 58 40"
-                                                                                            fill="none"
-                                                                                            xmlns="http://www.w3.org/2000/svg">
-                                                                                            <path
-                                                                                                d="M19.7674 28.2202C21.6527 32.4019 24.9182 35.8085 29.0165 37.8689C33.1148 39.9293 37.7968 40.5183 42.2777 39.5372C46.7587 38.5561 50.7661 36.0645 53.6285 32.48C56.4908 28.8955 58.034 24.4361 57.9994 19.8492C57.9648 15.2622 56.3545 10.8266 53.4385 7.28568C50.5224 3.74481 46.4778 1.31394 41.9825 0.400527C37.4873 -0.512885 32.8147 0.146678 28.748 2.26866C24.6812 4.39065 21.4675 7.84608 19.6455 12.0558L20.7467 12.5324C22.4595 8.57532 25.4804 5.32721 29.3031 3.33255C33.1259 1.33788 37.5181 0.717889 41.7436 1.5765C45.9691 2.4351 49.771 4.72012 52.5122 8.04854C55.2533 11.377 56.7669 15.5465 56.7995 19.8582C56.832 24.1699 55.3814 28.3618 52.6908 31.7312C50.0002 35.1006 46.2331 37.4427 42.0211 38.3649C37.809 39.2872 33.4079 38.7335 29.5555 36.7967C25.7031 34.86 22.6335 31.6578 20.8613 27.727L19.7674 28.2202Z"
-                                                                                                fill="white" />
-                                                                                            <path
-                                                                                                d="M40.5303 20.5303C40.8232 20.2374 40.8232 19.7626 40.5303 19.4697L35.7574 14.6967C35.4645 14.4038 34.9896 14.4038 34.6967 14.6967C34.4038 14.9896 34.4038 15.4645 34.6967 15.7574L38.9393 20L34.6967 24.2426C34.4038 24.5355 34.4038 25.0104 34.6967 25.3033C34.9896 25.5962 35.4645 25.5962 35.7574 25.3033L40.5303 20.5303ZM-6.55671e-08 20.75L40 20.75L40 19.25L6.55671e-08 19.25L-6.55671e-08 20.75Z"
-                                                                                                fill="white" />
-                                                                                        </svg>
-                                                                                    </span>
-                                                                                </Link>
+                                                                                <ElementFooterLink name="The Scoop on Me" redirectTo="/about"/>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -129,37 +98,22 @@ export default function Home() {
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div className="elementor-element elementor-element-4108db2 e-con-full e-flex e-con e-child"
-                                                                data-id="4108db2" 
-                                                                data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
-                                                                <div className="elementor-element elementor-element-92766eb e-flex e-con-boxed e-con e-child"
-                                                                    data-id="92766eb" 
-                                                                    data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
+                                                            <div className="elementor-element elementor-element-4108db2 e-con-full e-flex e-con e-child">
+                                                                <div className="elementor-element elementor-element-92766eb e-flex e-con-boxed e-con e-child">
                                                                     <div className="e-con-inner">
-                                                                        <div className="elementor-element elementor-element-1b23ef5 e-con-full e-flex e-con e-child"
-                                                                            data-id="1b23ef5"
-                                                                            
-                                                                            data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
-                                                                            <div className="elementor-element elementor-element-82afffe elementor-widget elementor-widget-tp-designation"
-                                                                                data-id="82afffe"
-                                                                                data-element_type="widget"
-                                                                                data-widget_type="tp-designation.default">
+                                                                        <div className="elementor-element elementor-element-1b23ef5 e-con-full e-flex e-con e-child">
+                                                                            <div className="elementor-element elementor-element-82afffe elementor-widget elementor-widget-tp-designation">
                                                                                 <div className="elementor-widget-container">
-                                                                                    <div className="designation-box"
-                                                                                        data-aos="zoom-in-up"
-                                                                                        data-aos-duration="1500">
+                                                                                    <div className="designation-box">
                                                                                         <div
-                                                                                            className="cmn-box py-xxl-7 py-xl-6 py-lg-4 py-4 px-xxl-8 px-xl-6 px-lg-4 px-4">
+                                                                                            className="cmn-box py-xxl-6 py-xl-6 py-lg-6 py-5 px-xxl-8 px-xl-6 px-lg-4 px-6">
                                                                                             <h5
-                                                                                                className="s1-color mb-2 fw_500 title-extraclr responsive-small">
+                                                                                                className="fs-4 s1-color mb-6 fw_500 title-extraclr">
                                                                                                 Title
                                                                                             </h5>
-                                                                                            <h3 className="titles-designer pb-xxl-7 pb-5"
-                                                                                                data-aos="fade-down"
-                                                                                                data-aos-duration="1500">
+                                                                                            <h3 className="titles-designer">
                                                                                                 <a href="javascript:void(0)"
-                                                                                                    className="fw_600">Business
-                                                                                                    Analyst</a>
+                                                                                                    className="fs-2 fw-semibold">{userData.introTitle}</a>
                                                                                             </h3>
                                                                                             <img decoding="async"
                                                                                                 src="/shapes/s-shape1.png"
@@ -170,74 +124,19 @@ export default function Home() {
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                        <div className="elementor-element elementor-element-43f9f55 e-flex e-con-boxed e-con e-child"
-                                                                            data-id="43f9f55"
-                                                                            
-                                                                            data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
+                                                                        <div className="elementor-element elementor-element-43f9f55 e-flex e-con-boxed e-con e-child">
                                                                             <div className="e-con-inner">
-                                                                                <div className="elementor-element elementor-element-de56cb0 elementor-widget elementor-widget-tp-profile"
-                                                                                    data-id="de56cb0"
-                                                                                    data-element_type="widget"
-                                                                                    data-widget_type="tp-profile.default">
-                                                                                    <div
-                                                                                        className="elementor-widget-container">
-                                                                                        <div className="profile-card"
-                                                                                            data-aos="zoom-in-down"
-                                                                                            data-aos-duration="1500">
-                                                                                            <div
-                                                                                                className="text-center body-socialwrap cmn-box position-relative pt-xxl-8 pt-xl-6 pt-5 pb-xxl-7 pb-xl-9 pb-md-7 pb-sm-7 pb-5 px-xxl-8 px-xl-6 px-lg-4 px-4">
-                                                                                                <ul
-                                                                                                    className="body-social body-socialtwo">
-                                                                                                    <li>
-                                                                                                        <a href="https://www.behance.net/"
-                                                                                                            className="soci">
-                                                                                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 64 64">
-                                                                                                                <linearGradient id="mM51xuUryDpy5zRPCJ4TLa_IXUU4h36YfmO_gr1" x1="32" x2="32" y1="6" y2="58" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#1a6dff"></stop><stop offset="1" stop-color="#c822ff"></stop></linearGradient><path fill="url(#mM51xuUryDpy5zRPCJ4TLa_IXUU4h36YfmO_gr1)" d="M32,58C17.664,58,6,46.337,6,32C6,17.664,17.664,6,32,6s26,11.664,26,26 C58,46.337,46.336,58,32,58z M32,8C18.767,8,8,18.767,8,32s10.767,24,24,24s24-10.767,24-24S45.233,8,32,8z"></path><linearGradient id="mM51xuUryDpy5zRPCJ4TLb_IXUU4h36YfmO_gr2" x1="21.922" x2="22.081" y1="25.872" y2="44.462" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#6dc7ff"></stop><stop offset="1" stop-color="#e6abff"></stop></linearGradient><rect width="6" height="18" x="19" y="26" fill="url(#mM51xuUryDpy5zRPCJ4TLb_IXUU4h36YfmO_gr2)"></rect><linearGradient id="mM51xuUryDpy5zRPCJ4TLc_IXUU4h36YfmO_gr3" x1="22.474" x2="22.527" y1="17.966" y2="24.145" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#6dc7ff"></stop><stop offset="1" stop-color="#e6abff"></stop></linearGradient><ellipse cx="22.5" cy="21" fill="url(#mM51xuUryDpy5zRPCJ4TLc_IXUU4h36YfmO_gr3)" rx="3.5" ry="3"></ellipse><g><linearGradient id="mM51xuUryDpy5zRPCJ4TLd_IXUU4h36YfmO_gr4" x1="38.077" x2="37.922" y1="25.983" y2="44.076" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#6dc7ff"></stop><stop offset="1" stop-color="#e6abff"></stop></linearGradient><path fill="url(#mM51xuUryDpy5zRPCJ4TLd_IXUU4h36YfmO_gr4)" d="M40,26h-0.529H39.47c-2.187,0-4,1.572-4.387,3.647H35V26h-6v18h6v-8.588v-1.529 c0.007-0.379,0.037-0.729,0.084-1.06C35.392,31.493,36.577,30.5,38,30.5c1.657,0,3,1.343,3,3v0.559v1.176V44h6v-9.118v-0.823V33 C47,29.134,43.866,26,40,26z"></path></g>
-                                                                                                                </svg>
-                                                                                                            <span
-                                                                                                                className="shape-icon">
-                                                                                                                <img decoding="async"
-                                                                                                                    src="/shapes/social-hover.png"
-                                                                                                                    alt="image"/>
-                                                                                                            </span>
-                                                                                                        </a>
-                                                                                                    </li>
-                                                                                                    <li>
-                                                                                                        <a href="https://www.instagram.com/"
-                                                                                                            className="soci">
-                                                                                                            {/* <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
-                                                                                                                <defs><linearGradient x1="30.999" y1="16" x2="30.999" y2="55.342" gradientUnits="userSpaceOnUse" id="color-1_52539_gr1"><stop offset="0" stop-color="#6dc7ff"></stop><stop offset="1" stop-color="#e6abff"></stop></linearGradient><linearGradient x1="32" y1="5" x2="32" y2="59.167" gradientUnits="userSpaceOnUse" id="color-2_52539_gr2"><stop offset="0" stop-color="#1a6dff"></stop><stop offset="1" stop-color="#c822ff"></stop></linearGradient></defs><g transform="translate(48.64,48.64) scale(0.62,0.62)"><g fill-opacity="0" fill="#dddddd" fill-rule="nonzero" stroke="none" strokeWidth="1" strokeLinecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" textAnchor="none" style={{ mixBlendMode: 'overlay' }}><path d="M-78.45161,334.45161v-412.90323h412.90323v412.90323z" id="bgRectangle"></path></g><g fill="none" fill-rule="nonzero" stroke="none" strokeWidth="1" strokeLinecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" textAnchor="none" style={{ mixBlendMode: 'normal' }}><g transform="scale(4,4)"><path d="M25.008,56.007c-0.003,-0.368 -0.006,-1.962 -0.009,-3.454l-0.003,-1.55c-6.729,0.915 -8.358,-3.78 -8.376,-3.83c-0.934,-2.368 -2.211,-3.045 -2.266,-3.073l-0.124,-0.072c-0.463,-0.316 -1.691,-1.157 -1.342,-2.263c0.315,-0.997 1.536,-1.1 2.091,-1.082c3.074,0.215 4.63,2.978 4.694,3.095c1.569,2.689 3.964,2.411 5.509,1.844c0.144,-0.688 0.367,-1.32 0.659,-1.878c-4.956,-0.879 -10.571,-3.515 -10.571,-13.104c0,-2.633 0.82,-4.96 2.441,-6.929c-0.362,-1.206 -0.774,-3.666 0.446,-6.765l0.174,-0.442l0.452,-0.144c0.416,-0.137 2.688,-0.624 7.359,2.433c1.928,-0.494 3.969,-0.749 6.074,-0.759c2.115,0.01 4.158,0.265 6.09,0.759c4.667,-3.058 6.934,-2.565 7.351,-2.433l0.451,0.145l0.174,0.44c1.225,3.098 0.813,5.559 0.451,6.766c1.618,1.963 2.438,4.291 2.438,6.929c0,9.591 -5.621,12.219 -10.588,13.087c0.563,1.065 0.868,2.402 0.868,3.878c0,1.683 -0.007,7.204 -0.015,8.402l-2,-0.014c0.008,-1.196 0.015,-6.708 0.015,-8.389c0,-2.442 -0.943,-3.522 -1.35,-3.874l-1.73,-1.497l2.274,-0.253c5.205,-0.578 10.525,-2.379 10.525,-11.341c0,-2.33 -0.777,-4.361 -2.31,-6.036l-0.43,-0.469l0.242,-0.587c0.166,-0.401 0.894,-2.442 -0.043,-5.291c-0.758,0.045 -2.568,0.402 -5.584,2.447l-0.384,0.259l-0.445,-0.123c-1.863,-0.518 -3.938,-0.796 -6.001,-0.806c-2.052,0.01 -4.124,0.288 -5.984,0.806l-0.445,0.123l-0.383,-0.259c-3.019,-2.044 -4.833,-2.404 -5.594,-2.449c-0.935,2.851 -0.206,4.892 -0.04,5.293l0.242,0.587l-0.429,0.469c-1.536,1.681 -2.314,3.712 -2.314,6.036c0,8.958 5.31,10.77 10.504,11.361l2.252,0.256l-1.708,1.49c-0.372,0.325 -1.03,1.112 -1.254,2.727l-0.075,0.549l-0.506,0.227c-1.321,0.592 -5.839,2.162 -8.548,-2.485c-0.015,-0.025 -0.544,-0.945 -1.502,-1.557c0.646,0.639 1.433,1.673 2.068,3.287c0.066,0.19 1.357,3.622 7.28,2.339l1.206,-0.262l0.012,3.978c0.003,1.487 0.006,3.076 0.009,3.444z" fill="url(#color-1_52539_gr1)"></path><path d="M32,58c-14.337,0 -26,-11.663 -26,-26c0,-14.337 11.663,-26 26,-26c14.337,0 26,11.663 26,26c0,14.337 -11.663,26 -26,26zM32,8c-13.233,0 -24,10.767 -24,24c0,13.233 10.767,24 24,24c13.233,0 24,-10.767 24,-24c0,-13.233 -10.767,-24 -24,-24z" fill="url(#color-2_52539_gr2)"></path></g></g></g>
-                                                                                                                </svg>
-                                                                                                            <span
-                                                                                                                className="shape-icon">
-                                                                                                                <img decoding="async"
-                                                                                                                    src="/shapes/social-hover.png"
-                                                                                                                    alt="image"/>
-                                                                                                            </span> */}
-                                                                                                        </a>
-                                                                                                    </li>
-                                                                                                </ul>
-                                                                                                <a href="about/index.html"
-                                                                                                    className="d-flex mt-7 cmn-footarrow align-items-center justify-content-between">
-                                                                                                    <span
-                                                                                                        className="fw_500 fs-seven n0-color">
-                                                                                                        Profiles </span>
-                                                                                                    <span
-                                                                                                        className="cmn-svg40">
-                                                                                                        <svg width="58"
-                                                                                                            height="40"
-                                                                                                            viewBox="0 0 58 40"
-                                                                                                            fill="none"
-                                                                                                            xmlns="http://www.w3.org/2000/svg">
-                                                                                                            <path
-                                                                                                                d="M19.7674 28.2202C21.6527 32.4019 24.9182 35.8085 29.0165 37.8689C33.1148 39.9293 37.7968 40.5183 42.2777 39.5372C46.7587 38.5561 50.7661 36.0645 53.6285 32.48C56.4908 28.8955 58.034 24.4361 57.9994 19.8492C57.9648 15.2622 56.3545 10.8266 53.4385 7.28568C50.5224 3.74481 46.4778 1.31394 41.9825 0.400527C37.4873 -0.512885 32.8147 0.146678 28.748 2.26866C24.6812 4.39065 21.4675 7.84608 19.6455 12.0558L20.7467 12.5324C22.4595 8.57532 25.4804 5.32721 29.3031 3.33255C33.1259 1.33788 37.5181 0.717889 41.7436 1.5765C45.9691 2.4351 49.771 4.72012 52.5122 8.04854C55.2533 11.377 56.7669 15.5465 56.7995 19.8582C56.832 24.1699 55.3814 28.3618 52.6908 31.7312C50.0002 35.1006 46.2331 37.4427 42.0211 38.3649C37.809 39.2872 33.4079 38.7335 29.5555 36.7967C25.7031 34.86 22.6335 31.6578 20.8613 27.727L19.7674 28.2202Z"
-                                                                                                                fill="white" />
-                                                                                                            <path
-                                                                                                                d="M40.5303 20.5303C40.8232 20.2374 40.8232 19.7626 40.5303 19.4697L35.7574 14.6967C35.4645 14.4038 34.9896 14.4038 34.6967 14.6967C34.4038 14.9896 34.4038 15.4645 34.6967 15.7574L38.9393 20L34.6967 24.2426C34.4038 24.5355 34.4038 25.0104 34.6967 25.3033C34.9896 25.5962 35.4645 25.5962 35.7574 25.3033L40.5303 20.5303ZM-6.55671e-08 20.75L40 20.75L40 19.25L6.55671e-08 19.25L-6.55671e-08 20.75Z"
-                                                                                                                fill="white" />
-                                                                                                        </svg>
-                                                                                                    </span>
-                                                                                                </a>
+                                                                                <div className="elementor-element elementor-element-de56cb0 elementor-widget elementor-widget-tp-profile">
+                                                                                    <div className="elementor-widget-container">
+                                                                                        <div className="profile-card">
+                                                                                            <div className="body-socialwrap cmn-box position-relative py-xxl-6 py-xl-6 py-lg-6 py-5 px-xxl-8 px-xl-6 px-lg-4 px-6">
+                                                                                                <h5
+                                                                                                    className="fs-4 s1-color mb-8 fw_500 title-extraclr">
+                                                                                                    Social Profile
+                                                                                                </h5>
+                                                                                                <SocialProfileList/>
+                                                                                                <img decoding="async" src="/shapes/s-shape3.png"
+                                                                                                    alt="image" className="s-shape1"/>
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
@@ -246,20 +145,19 @@ export default function Home() {
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div className="elementor-element elementor-element-dbb708c e-flex e-con-boxed e-con e-child"
-                                                                    data-id="dbb708c" 
-                                                                    data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
+                                                                <div className="elementor-element elementor-element-dbb708c e-flex e-con-boxed e-con e-child">
                                                                     <div className="e-con-inner">
-                                                                        <div className="elementor-element elementor-element-57ef5a3 elementor-widget elementor-widget-tp-service"
-                                                                            data-id="57ef5a3" data-element_type="widget"
-                                                                            data-widget_type="tp-service.default">
+                                                                        <div className="elementor-element elementor-element-57ef5a3 elementor-widget elementor-widget-tp-service">
                                                                             <div className="elementor-widget-container">
-                                                                                <div className="cmn-box service-offering 4 py-xxl-8 py-xl-6 py-lg-4 py-4 px-xxl-8 px-xl-6 px-lg-4 px-4"
-                                                                                    data-aos="zoom-in-up"
-                                                                                    data-aos-duration="1400">
+                                                                                <div className="cmn-box service-offering py-xxl-6 py-xl-6 py-lg-6 py-5 px-xxl-8 px-xl-6 px-lg-4 px-6">
                                                                                     <span
-                                                                                        className="d-block mb-xxl-11 mb-xl-8 mb-8 fw_500 fs-five n0-color">
-                                                                                        Services Offering </span>
+                                                                                        className="d-block fs-3 fw-semibold n0-color">
+                                                                                        Areas of Interest </span>
+                                                                                    <div className="d-flex align-items-center gap-2 mb-6">
+                                                                                        <span className="fs-5">
+                                                                                            Take a look at some of the things I love working on&nbsp;&nbsp; *•.</span>
+                                                                                            <i class="fa-solid fa-person-snowboarding goodthingking-img n0-color fs-4"></i>
+                                                                                    </div>
                                                                                     <ul
                                                                                         className="ordering-brand d-flex justify-content-between gap-3 mb-11">
                                                                                         <li>
@@ -321,34 +219,7 @@ export default function Home() {
                                                                                             </a>
                                                                                         </li>
                                                                                     </ul>
-                                                                                    <a href="service/index.html"
-                                                                                        className="d-flex align-items-center gap-xxl-3 gap-1">
-                                                                                        <span className="goodthingking">
-                                                                                            Things I’m good at </span>
-                                                                                        <img decoding="async"
-                                                                                            src="/shapes/goods.png"
-                                                                                            alt="image"
-                                                                                            className="goodthingking-img"/>
-                                                                                    </a>
-                                                                                    <a href="service/index.html"
-                                                                                        className="d-flex mt-10 cmn-footarrow align-items-center justify-content-between">
-                                                                                        <span
-                                                                                            className="fw_500 fs-seven n0-color">
-                                                                                            All Services </span>
-                                                                                        <span className="cmn-svg40">
-                                                                                            <svg width="58" height="40"
-                                                                                                viewBox="0 0 58 40"
-                                                                                                fill="none"
-                                                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                                                <path
-                                                                                                    d="M19.7674 28.2202C21.6527 32.4019 24.9182 35.8085 29.0165 37.8689C33.1148 39.9293 37.7968 40.5183 42.2777 39.5372C46.7587 38.5561 50.7661 36.0645 53.6285 32.48C56.4908 28.8955 58.034 24.4361 57.9994 19.8492C57.9648 15.2622 56.3545 10.8266 53.4385 7.28568C50.5224 3.74481 46.4778 1.31394 41.9825 0.400527C37.4873 -0.512885 32.8147 0.146678 28.748 2.26866C24.6812 4.39065 21.4675 7.84608 19.6455 12.0558L20.7467 12.5324C22.4595 8.57532 25.4804 5.32721 29.3031 3.33255C33.1259 1.33788 37.5181 0.717889 41.7436 1.5765C45.9691 2.4351 49.771 4.72012 52.5122 8.04854C55.2533 11.377 56.7669 15.5465 56.7995 19.8582C56.832 24.1699 55.3814 28.3618 52.6908 31.7312C50.0002 35.1006 46.2331 37.4427 42.0211 38.3649C37.809 39.2872 33.4079 38.7335 29.5555 36.7967C25.7031 34.86 22.6335 31.6578 20.8613 27.727L19.7674 28.2202Z"
-                                                                                                    fill="white" />
-                                                                                                <path
-                                                                                                    d="M40.5303 20.5303C40.8232 20.2374 40.8232 19.7626 40.5303 19.4697L35.7574 14.6967C35.4645 14.4038 34.9896 14.4038 34.6967 14.6967C34.4038 14.9896 34.4038 15.4645 34.6967 15.7574L38.9393 20L34.6967 24.2426C34.4038 24.5355 34.4038 25.0104 34.6967 25.3033C34.9896 25.5962 35.4645 25.5962 35.7574 25.3033L40.5303 20.5303ZM-6.55671e-08 20.75L40 20.75L40 19.25L6.55671e-08 19.25L-6.55671e-08 20.75Z"
-                                                                                                    fill="white" />
-                                                                                            </svg>
-                                                                                        </span>
-                                                                                    </a>
+                                                                                    <ElementFooterLink name="See my Portfolio" redirectTo="/about"/>
                                                                                     <img decoding="async"
                                                                                         src="/shapes/s-shape1.png"
                                                                                         alt="image" className="s-shape1"/>
@@ -1492,27 +1363,23 @@ export default function Home() {
                                                 </div>
                                                 <div className="elementor-element elementor-element-resume-outer e-con-full e-flex e-con e-child">
                                                     <div className="elementor-element elementor-element-middle e-con-full e-flex e-con e-child">
-                                                        <div className="elementor-element elementor-element-resume-inner elementor-widget elementor-widget-tp-marque"
-                                                            data-id="4d61487" data-element_type="widget"
-                                                            data-widget_type="tp-marque.default">
+                                                        <div className="elementor-element elementor-element-resume-inner elementor-widget elementor-widget-tp-marque">
                                                             <div className="elementor-widget-container">
-                                                                <div className="cmn-box feature-box freature-boxone position-relative py-xxl-6 py-xl-6 py-lg-6 py-5 px-xxl-4 px-3"
-                                                                    data-aos="flip-up" data-aos-duration="1000">
-                                                                    <span className="clropa">Here`&apos`s my Résumé, in case... </span>
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" height="1.56rem" width="1.87rem"><path d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z"/></svg>
+                                                                <div className="cmn-box feature-box freature-boxone position-relative py-xxl-6 py-xl-6 py-lg-6 py-5 px-xxl-8 px-xl-6 px-lg-4 px-6 flex">
+                                                                    <div class="w-4/5">
+                                                                        <span className="fs-6 fw-semibold n0-color">Here &apos;s my Résumé, in case... </span>
+                                                                    </div>
+                                                                    <div class="w-1/4">
+                                                                        <i class="fa-solid fa-cloud-arrow-down n0-color"></i>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div className="elementor-element elementor-element-e6d7831 e-con-full e-flex e-con e-child"
-                                                        data-id="e6d7831" 
-                                                        data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
-                                                        <div className="elementor-element elementor-element-32efc2c elementor-widget elementor-widget-tp-ex"
-                                                            data-id="32efc2c" data-element_type="widget"
-                                                            data-widget_type="tp-ex.default">
+                                                    <div className="elementor-element elementor-element-e6d7831 e-con-full e-flex e-con e-child">
+                                                        <div className="elementor-element elementor-element-32efc2c elementor-widget elementor-widget-tp-ex">
                                                             <div className="elementor-widget-container">
-                                                                <div className="experience-box" data-aos="fade-up"
-                                                                    data-aos-duration="1200">
+                                                                <div className="experience-box">
                                                                     <div
                                                                         className="expri-box cmn-box d-grid position-relative pt-xxl-7 pt-6 pb-xxl-9 pb-6 px-xxl-8 px-xl-6 px-lg-4 px-4">
                                                                         <div className="expri-items-box mb-xxl-7 mb-xl-10 mb-lg-10 mb-md-8 mb-sm-3 text-center d-flex align-items-center justify-content-center"
