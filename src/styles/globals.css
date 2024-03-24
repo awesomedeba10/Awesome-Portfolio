@@ -2,20 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "animate.css/animate.min.css";
-@import "aos/dist/aos.css";
-@import "@fortawesome/fontawesome-free/css/all.min.css";
-@import "magnific-popup/dist/magnific-popup.css";
-@import "swiper/swiper-bundle.css";
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import "~animate.css/animate.min.css";
+@import "~aos/dist/aos.css";
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import "~magnific-popup/dist/magnific-popup.css";
+@import "~swiper/swiper-bundle.css";
 
-@import "../styles/plugins/bootstrap.min.css";
+/* @import "../styles/plugins/bootstrap.min.css"; */
 
-@import "../styles/common.css";
+/* @import "../styles/common.css";
 @import "../styles/custom.css";
 @import "../styles/blog.css";
 @import "../styles/light.css";
 @import "../styles/responsive.css";
 @import "../styles/custom-frontend-lite.min.css";
 @import "../styles/elementor-post.min.css";
-@import "../styles/elementor-global.min.css";
-/* @import "../styles/style.min.css"; */
+@import "../styles/elementor-global.min.css"; */
+@import "../styles/style.min.css";

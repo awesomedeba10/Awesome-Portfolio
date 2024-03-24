@@ -6,7 +6,11 @@ module.exports = {
         "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     ],
     theme: {
-        extend: {},
+        extend: {
+            lineHeight: {
+              '3rem': '3rem',
+            }
+        }
     },
     plugins: [],
 };

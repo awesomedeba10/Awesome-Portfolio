@@ -154,8 +154,8 @@ export default function Home() {
                                                                                         className="d-block fs-3 fw-semibold n0-color">
                                                                                         Areas of Interest </span>
                                                                                     <div className="d-flex align-items-center gap-2 mb-6">
-                                                                                        <span className="fs-5">
-                                                                                            Take a look at some of the things I love working on&nbsp;&nbsp; *•.</span>
+                                                                                        <p className="fs-5">
+                                                                                            Take a look at some of the things I love working on&nbsp;&nbsp; *•.</p>
                                                                                             <i class="fa-solid fa-person-snowboarding goodthingking-img n0-color fs-4"></i>
                                                                                     </div>
                                                                                     <ul

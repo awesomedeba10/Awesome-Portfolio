@@ -2,32 +2,26 @@
 
 import jQuery from "jquery";
 import Aos from "aos";
-import Swiper from 'swiper';
+import Swiper from "swiper";
 
 export default function initImports() {
     require("bootstrap/dist/js/bootstrap.bundle");
 
     window.$ = window.jQuery = jQuery;
 
-    require('waypoints/lib/noframework.waypoints.min');
-    require('jquery-migrate');
+    require("waypoints/lib/noframework.waypoints.min");
+    require("jquery-migrate");
 
     // preloader
     setTimeout(function () {
         $("#preloader").fadeToggle();
     }, 400);
 
-    // Remove Section Margin
-    $(".elementor").parents(".sec-mar").removeClass("sec-mar");
-
-    //>> Aos Animation <<//
     Aos.init({
         once: true,
         easing: "ease-in-out",
     });
-    //>> Aos Animation <<//
 
-    // Click to Scroll Top //
     var ScrollTop = $(".scrollToTop");
     $(".scrollToTop").on("click", function () {
         $("html, body").animate(
@@ -39,25 +33,11 @@ export default function initImports() {
         return false;
     });
 
-    setTheme(localStorage.getItem("theme"));
-    setDirection(localStorage.getItem("direction"));
-
+    // Light/Dark Switch; will implement later :P
+    setTheme("light-theme");
     $(".mode--toggle").on("click", function () {
         toggleTheme();
     });
-
-    $(".direction--toggle, .direction--toggletwo").on("click", function () {
-        toggleDirection();
-    });
-
-    const text = document.querySelector(".text");
-    let formatted_text = text.innerText + " "
-    let angle = 360 / formatted_text.length
-    text.innerHTML = formatted_text.split("")
-        .map(
-            (char, i) => `<span style="transform:rotate(${i * angle}deg)">${char}</span>`
-        )
-        .join("");
 
     function toggleTheme() {
         const currentTheme = localStorage.getItem("theme");
@@ -66,16 +46,6 @@ export default function initImports() {
             setTheme("dark-theme");
         } else {
             setTheme("light-theme");
-        }
-    }
-
-    function toggleDirection() {
-        const currentDirection = localStorage.getItem("direction");
-
-        if (currentDirection === "ltr") {
-            setDirection("rtl");
-        } else {
-            setDirection("ltr");
         }
     }
 
@@ -89,39 +59,19 @@ export default function initImports() {
         }
     }
 
-    function setDirection(direction) {
-        localStorage.setItem("direction", direction);
-
-        if (direction === "rtl") {
-            $("html").attr("dir", "rtl");
-            $("body").addClass("rtlwrap");
-        } else {
-            $("html").attr("dir", "ltr");
-            $("body").removeClass("rtlwrap");
-        }
-    }
-
-    // dark light and rtl ltr
-
-    // Sticky Header //
-    var fixed_top = $(".one__header");
-    if ($(window).scrollTop() > 50) {
-        fixed_top.addClass("animated fadeInDown header-fixed");
-    } else {
-        fixed_top.removeClass("animated fadeInDown header-fixed");
-    }
-    // Sticky Header //
+    const text = document.querySelector(".text");
+    let formatted_text = text.innerText + " ";
+    let angle = 360 / formatted_text.length;
+    text.innerHTML = formatted_text
+        .split("")
+        .map(
+            (char, i) =>
+                `<span style="transform:rotate(${i * angle}deg)">${char}</span>`
+        )
+        .join("");
 
     // window on scroll function//
     $(window).on("scroll", function () {
-        // Sticky Header//
-        if ($(window).scrollTop() > 50) {
-            fixed_top.addClass("animated fadeInDown header-fixed");
-        } else {
-            fixed_top.removeClass("animated fadeInDown header-fixed");
-        }
-        // Sticky Header//
-
         // Check Scroll //
         if ($(this).scrollTop() < 600) {
             ScrollTop.removeClass("active");
@@ -167,67 +117,6 @@ export default function initImports() {
     // });
     // gridGallery//
 
-    // Navbar Auto Active Class //
-    var curUrl = $(location).attr("href");
-    var terSegments = curUrl.split("/");
-    var desired_segment = terSegments[terSegments.length - 1];
-    var removeGarbage = desired_segment.split(".html")[0] + ".html";
-    var checkLink = $('.menu-link a[href="' + removeGarbage + '"]');
-    var targetClass = checkLink.addClass("active");
-    targetClass.parents(".menu-item").addClass("active-parents");
-    $(".active-parents > a").addClass("active");
-    // Navbar Auto Active Class  //
-
-    // navbar custom//
-    $(".navbar-toggle-btn").on("click", function () {
-        $(".navbar-toggle-item").slideToggle(300);
-        $("body").toggleClass("overflow-hidden");
-        $(this).toggleClass("open");
-    });
-    $(".menu-item a").on("click", function () {
-        $(this).siblings("ul").slideToggle(300);
-    });
-    // navbar custom//
-
-    // toggle search box //
-    $(".search-toggle-btn").on("click", function () {
-        $(".search-toggle-box").slideToggle(300);
-    });
-    // toggle search box //
-
-    // Attach the handleWindowResize function to the window resize event//
-    $(window).resize(function () {
-        handleWindowResize();
-    });
-
-    // Function to handle window resize//
-    function handleWindowResize() {
-        var windowWidth = $(window).width();
-        if (windowWidth <= 767) {
-            $(document).click(function (event) {
-                if (
-                    !$(event.target).closest(
-                        ".search-toggle-box, .search-toggle-btn"
-                    ).length
-                ) {
-                    $(".search-toggle-box").slideUp(300);
-                }
-            });
-        }
-    }
-    if ($(window).width() <= 767) {
-        $(document).click(function (event) {
-            if (
-                !$(event.target).closest(
-                    ".search-toggle-box, .search-toggle-btn"
-                ).length
-            ) {
-                $(".search-toggle-box").slideUp(300);
-            }
-        });
-    }
-
-    // swipper slide //
     var swiper = new Swiper(".free__livewrap", {
         loop: true,
         slidesPerView: 1,
@@ -343,23 +232,6 @@ export default function initImports() {
         clone.appendTo(".line-shape.first");
     }
 
-    // text-circle.js
-
-    //--Tigger button and change dark light and rtl ltr box--//
-    $(".tigger-arrow").on("click", function () {
-        $(this).toggleClass("tigger-active");
-        $(this).parent().next(".tigger-property").slideToggle();
-    });
-    //--Tigger button and change dark light and rtl ltr box--//
-
-    // Current Year//
-    $(".currentYear").text(new Date().getFullYear());
-    // Current Year//
-
-    //propdown common lide//
-    // $(".dropdown-toggle").dropdown();
-    //propdown common lide//
-
     // Mouse Follower //
     const follower = document.querySelector(".mouse-follower .cursor-outline");
     const dot = document.querySelector(".mouse-follower .cursor-dot");
@@ -452,4 +324,22 @@ export default function initImports() {
             $(this).next(".content-area").slideToggle();
         }
     });
+
+    var $accordion_a_w_no_hover = 8,
+        $accordion_a = $(".accordion a"),
+        $accordion_a_w_hover =
+            100 - $accordion_a_w_no_hover * $accordion_a.length + "%",
+        $accordion_a_w = 100 / $accordion_a.length;
+
+    $accordion_a.css("width", $accordion_a_w + "%");
+
+    $accordion_a.hover(
+        function () {
+            $accordion_a.css("width", 0 + "%");
+            $(this).css("width", $accordion_a_w_hover);
+        },
+        function () {
+            $accordion_a.css("width", $accordion_a_w + "%");
+        }
+    );
 }

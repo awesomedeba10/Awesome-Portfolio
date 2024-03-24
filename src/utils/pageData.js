@@ -27,3 +27,22 @@ export const socialProfiles = [
         icon: "fa-stack-overflow", link: "https://stackoverflow.com/users/8551281/iamawesome", color: '#e7700d'
     }
 ];
+
+export const interestData = [
+    {
+        name: 'Web Application Development', icon: 'fa-laptop-code',
+        description: 'Building web apps transforms concepts into reality. I blend creativity with function to craft intuitive interfaces and optimize performance'
+    },
+    {
+        name: 'Data Analytics', icon: 'fa-chart-line',
+        description: 'I love telling a data-driven story; making a predictive and comprehensive presentation is one of my favourite skills.'
+    },
+    {
+        name: 'Machine Learning', icon: 'fa-microchip',
+        description: 'Machine Learning is more than an API call to Scikit-learn; I love the math, and the theory as well as the implementation'
+    },
+    {
+        name: 'Artificial Intelligence', icon: 'fa-robot',
+        description: 'I can\'t stay behind the future—I\'m diving deeper into AI. Exploring every algorithm keep me at the forefront of this evolving field.'
+    }
+]
