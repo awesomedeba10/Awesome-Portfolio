@@ -44,7 +44,7 @@ export default function Home() {
                                     <div className="d-flex justify-content-center">
                                         <Link
                                             href="/about"
-                                            className="w-100 cmn-btn text-center justify-content-center gap-2 d-inline-flex align-items-center mt-4 mb-2 py-2 px-4"
+                                            className="w-100 cmn-btn text-center justify-content-center gap-2 d-inline-flex align-items-center mt-4 mb-3 py-2 px-4"
                                         >
                                             <span className="fs-5 n0-color">
                                                 I’m {userData.name}{" "}
@@ -57,10 +57,7 @@ export default function Home() {
                                         data-aos="fade-down"
                                         data-aos-duration="1200"
                                     >
-                                        Versatile team player skilled in
-                                        Analytics and Software development,
-                                        offering comprehensive skills across
-                                        domains.
+                                        Versatile team player skilled in Analytics, MLOps, and Software Development, adeptly offering comprehensive expertise across a range of diverse technical domains.
                                     </p>
                                     <ElementFooterLink
                                         name="The Scoop on Me"
@@ -165,7 +162,7 @@ export default function Home() {
                                         <span className="d-block fs-3 fw-semibold n0-color">
                                             Areas of Interest{" "}
                                         </span>
-                                        <div className="d-flex align-items-center gap-2 mb-4">
+                                        <div className="d-flex align-items-center gap-2 mb-3">
                                             <span className="fs-seven">
                                                 Take a look at some of the
                                                 things I love working

@@ -21,15 +21,15 @@ export default function InterestAreaBlock() {
                                 </div>
 
                                 <div class="accordion_item_inf h-100">
-                                    <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0">
-                                        <div className="text-center fs-1 px-2 py-3">
-                                            <i class={`n1-color fa-solid ${fav.icon} mb-4`}></i>
-                                            <span className={`mt-2 ${kanit.className}`}>
+                                    <figure class="flex h-100 bg-slate-100 rounded-xl gap-2 px-4 py-3">
+                                        <div className="text-center">
+                                            <i class={`n1-color fs-1 fa-solid ${fav.icon}`}></i>
+                                            <span className={`mt-3 ${kanit.className}`}>
                                                 {fav.name}
                                             </span>
                                         </div>
-                                        <div class="px-2 py-3 text-center">
-                                            <p class="text-lg font-medium h-100">{fav.description}</p>
+                                        <div class="text-center">
+                                            <p class="text-lg font-medium h-100 py-2">{fav.description}</p>
                                         </div>
                                     </figure>
                                 </div>

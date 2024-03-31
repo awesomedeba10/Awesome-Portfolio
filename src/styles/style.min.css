@@ -10,6 +10,7 @@
     --tw: #ffffff;
     --n0: #2a2048;
     --n1: #3b2974;
+    --n2: #5b566a;
     --n07: #245ad7;
     --n06: #1c1d20;
     --n10: #fafafb;
@@ -4014,41 +4015,35 @@ iframe {
 
 .cv-dl-wrapper {
     position: relative;
-    display: inline-block;
-}
-
-.cv-dl-wrapper i {
+    display: block;
+    text-align: center;
+    width: fit-content;
+    color: var(--n2);
+    transition: .5s;
     border-radius: 50%;
-    color: var(--n1);
-    transition: transform 1s ease;
 }
 
-.cv-dl-wrapper i:after {
-    position: absolute;
+.cv-dl-wrapper::before {
     content: '';
-    box-sizing: content-box;
-    width: 100%;
-    height: 100%;
-    border-radius: 30%;
-    top: -3px;
-    left: -1px;
-    padding: 1px;
-    box-shadow: 0px 3px 7px 4px var(--n1);
-    opacity: 0;
-    transition: opacity 1s ease;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 89%;
+    height: 84%;
+    border-radius: 50%;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
 }
 
-.cv-dl-wrapper:before {
-    background-color: #1a1a1a;
+.cv-dl-wrapper:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 14px var(--n2);
 }
 
-.cv-dl-wrapper i:hover {
-    background: var(--n1);
-    color: #fff;
-}
-
-.cv-dl-wrapper i:hover:after {
-    opacity: 1;
+.cv-dl-wrapper:hover {
+    color: var(--n1);
+    text-shadow: 0 0 2px var(--n2);
 }
 
 .cmn-box {
@@ -4314,7 +4309,7 @@ svg path {
 
 .accordion li {
   display: block;
-  height: 10rem;
+  height: 10.25rem;
 }
 
 .accordion li > div {
