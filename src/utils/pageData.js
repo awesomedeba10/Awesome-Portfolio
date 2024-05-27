@@ -46,3 +46,27 @@ export const interestData = [
         description: 'I can\'t stay behind the future—I\'m diving deeper into AI. Exploring every algorithm keep me at the forefront of this evolving field.'
     }
 ]
+
+export const experienceData = [
+    {
+        company: 'Navi Technologies Ltd. 🚀',
+        role: 'Business Analyst 📊',
+        dateFrom: 'Sep\'22',
+        dateTo: 'Current ⏳',
+        location: 'Bengaluru, IN 🌏'
+    },
+    {
+        company: 'FastInfo Legal Pvt. Ltd. 🌌',
+        role: 'Web Application Developer 💡',
+        dateFrom: 'Sep\'20',
+        dateTo: 'May\'21 🎯',
+        location: 'Kolkata, IN 🌏'
+    },
+    {
+        company: 'Manyavar&Mohey 🌠',
+        role: 'Web Application Developer 💡',
+        dateFrom: 'Sep\'18',
+        dateTo: 'Sep\'20 🎯',
+        location: 'Kolkata, IN 🌏'
+    }
+]

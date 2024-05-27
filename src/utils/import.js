@@ -342,4 +342,30 @@ export default function initImports() {
             $accordion_a.css("width", $accordion_a_w + "%");
         }
     );
+
+    // To be used later
+    // $(".timeline__arrow").on("click", function () {
+    //     let el = $(this),
+    //     isCollapsed = el.attr('aria-expanded'),
+    //     $expandable = $(`#${el.attr('aria-controls')}`);
+
+    //     if (isCollapsed == 'false') {
+    //         el.attr('aria-expanded', 'true');
+    //         $expandable.attr('aria-hidden', isCollapsed).slideDown();
+    //         $expandable.addClass('timeline__item-body--expanded');
+    //         $expandable.find('.timeline__item-body-content').css({
+    //                 opacity: 1,
+    //                 visibility: 'visible'
+    //             })
+    //     } else {
+    //         el.attr('aria-expanded', 'false');
+    //         $expandable.attr('aria-hidden', isCollapsed).slideUp();
+    //         $expandable.removeClass('timeline__item-body--expanded');
+    //         $expandable.find('.timeline__item-body-content').css({
+    //             opacity: 0,
+    //             visibility: 'hidden'
+    //         })
+    //     }
+    // });
+
 }

@@ -1,4 +1,3 @@
-import { Kanit } from "next/font/google";
 import { kanit } from "../utils/fonts";
 
 import { interestData } from "../utils/pageData";
