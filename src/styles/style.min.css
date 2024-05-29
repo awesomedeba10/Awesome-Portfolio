@@ -1084,6 +1084,7 @@ input::-webkit-inner-spin-button {
 }
 
 input[type="number"] {
+    appearance: textfield;
     -moz-appearance: textfield;
 }
 
@@ -4524,8 +4525,8 @@ svg path {
 .body-social li a {
     display: flex;
     background: #e3edf7;
-    height: 4rem;
-    width: 4rem;
+    height: 3rem;
+    width: 3rem;
     border-radius: 8px;
     align-items: center;
     justify-content: center;
@@ -4537,7 +4538,7 @@ svg path {
 }
 
 .body-social li a i {
-    font-size: 50px;
+    font-size: 2rem !important;
     color: #777;
     transition: transform 0.5s;
 }
@@ -4635,8 +4636,7 @@ svg path {
 
 .body-socialtwo {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: left;
     gap: 26px;
 }
 

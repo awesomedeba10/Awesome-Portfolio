@@ -1,6 +1,10 @@
 import Link from "next/link";
+import { useEffect } from "react";
+
 import { userData } from "../../utils/pageData";
 import { vollkorn, kanit } from "../../utils/fonts";
+
+import initImports from "../../utils/import";
 
 import ElementFooterLink from "../../components/ElementFooterLink";
 import SocialProfileList from "../../components/SocialProfileList";
@@ -8,6 +12,10 @@ import InterestAreaBlock from "../../components/InterestAreaBlock";
 import ExperienceHomePageBlock from "../../components/ExperienceHomePageBlock";
 
 export default function Home() {
+    useEffect(() => {
+        initImports();
+    }, []);
+
     return (
         <section
             className={`body-box body-box1 position-relative cus-z-1 pb-xxl-20 pb-xl-15 pb-lg-10 pb-9 my-5 ${vollkorn.className}`}
@@ -48,7 +56,7 @@ export default function Home() {
                                             className="w-100 cmn-btn text-center justify-content-center gap-2 d-inline-flex align-items-center mt-4 mb-3 py-2 px-4"
                                         >
                                             <span className="fs-5 n0-color">
-                                                I’m {userData.name}{" "}
+                                                I’m {userData.name}{" "} About
                                             </span>
                                             <i class="icon fa-regular fa-hand-peace"></i>
                                         </Link>

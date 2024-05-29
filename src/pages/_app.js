@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import Layout from "../components/Layout";
 
-import initImports from "../utils/import";
 import '../styles/globals.css';
+import initGlobalImports from "../utils/imports/globalInit";
 
 export default function App({ Component, pageProps }) {
     // Use the layout defined at the page level, if available
@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }) {
 
     useEffect(() => {
         setIsClient(true);
-        initImports();
+        initGlobalImports();
     }, []);
 
     return getLayout(

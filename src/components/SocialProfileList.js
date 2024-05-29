@@ -3,7 +3,7 @@ import { socialProfiles } from "../utils/pageData";
 
 export default function SocialProfileList() {
     return (
-        <ul className="body-social body-socialtwo py-3">
+        <ul className="body-social body-socialtwo pt-3 pb-2">
             {socialProfiles.map((profile, index) => (
             <li key={index}>
                 <Link href={profile.link} target="_blank" rel="noopener noreferrer">
