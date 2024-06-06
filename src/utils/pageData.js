@@ -5,6 +5,8 @@ export const userData = {
     countryCode: "+91",
     address: "Bengaluru, Karnataka, IN",
     introTitle: "Business Analyst",
+    shortIntro: "Versatile team player skilled in Analytics, MLOps, and Web Application Development, adeptly offering comprehensive expertise across a broad range of diverse and innovative technical domains.",
+    longIntro: ""
 };
 
 export const metaData = {
@@ -25,6 +27,9 @@ export const socialProfiles = [
     },
     {
         icon: "fa-stack-overflow", link: "https://stackoverflow.com/users/8551281/iamawesome", color: '#e7700d'
+    },
+    {
+        icon: "fa-medium", link: "https://medium.com/@officialdeba10", color: '#292929'
     }
 ];
 
@@ -70,3 +75,25 @@ export const experienceData = [
         location: 'Kolkata, IN 🌏'
     }
 ]
+
+export const skillsData = {
+    "Programming Languages": [
+        'SQL', 'Python', 'JavaScript', 'PHP', 'Scala'
+    ],
+    "Database": [
+        'MySQL' , 'AWS Athena' , 'PrestoDB' , 'PostgreSQL' , 'OracleDB'
+    ],
+    "Platform Based Skills": [
+        'Tableau' , 'Databricks' , 'Apache Airflow' , 'Datastudio' ,
+        'Superset' , 'Metabase' , 'GitHub' , 'Jupyter Notebook' ,
+        'Docker' , 'Google Colab' , 'Heroku' , 'VS Code' , 'Apache Flink' ,
+        'Linux' , 'Postman' , 'MS Office'
+    ],
+    "Frameworks & Libraries": [
+        'PySpark', 'Flask', 'Streamlit', 'Pandas', 'NumPy',
+        'Scikit-Learn', 'Plotly', 'MatplotLib', 'Seaborn',
+        'NLTK', 'SHAP', 'Keras', 'OpenCV', 'imblearn', 'statsModel',
+        'Node.js', 'Angular', 'Laravel', 'Next.js'
+    ]
+};
+

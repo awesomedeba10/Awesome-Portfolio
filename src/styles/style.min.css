@@ -177,7 +177,8 @@
 
 .light-theme .layla-infoabout h4,
 .light-theme .layla-infoabout span {
-    color: #000 !important;
+    color: var(--n1) !important;
+    font-size: 34px;
 }
 
 .light-theme .article-detailswrap {
@@ -3795,6 +3796,12 @@ iframe {
     }
 }
 
+.footer-custom-text {
+    color: var(--n1);
+    font-size: 1em !important;
+    letter-spacing: 0.25px;
+}
+
 .footer-copyright {
     display: flex;
     align-items: center;
@@ -3931,7 +3938,7 @@ iframe {
 }
 .expri-box .timeline__item {
 	position: relative;
-	padding-bottom: 2.25em;
+	padding-bottom: 2em;
 }
 .expri-box .timeline__item:last-child {
     padding-bottom: 1.5em;
@@ -4454,6 +4461,8 @@ svg path {
 
 .accordion .accordion-card i {
     font-size: 3.5rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .accordion li .accordion_item_inf {
@@ -4526,7 +4535,7 @@ svg path {
     display: flex;
     background: #e3edf7;
     height: 3rem;
-    width: 3rem;
+    width: 3.125rem;
     border-radius: 8px;
     align-items: center;
     justify-content: center;

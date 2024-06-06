@@ -1,13 +1,14 @@
 import Link from 'next/link';
+import { kanit } from "../utils/fonts";
 
 export default function FooterBlock() {
     return (
-        <footer className="footer position-relative py-xxl-8 py-6">
+        <footer className="footer position-relative pb-6 pt-4 mb-3">
             <div className="container">
                 <div
-                    className="footer-wrap d-grid gap-4 justify-content-center d-lg-flex align-items-center justify-content-lg-between">
+                    className={`footer-wrap d-grid gap-4 justify-content-center d-lg-flex align-items-center justify-content-lg-between footer-custom-text ${kanit.className}`}>
                     <div className="footer-copyright">
-                        With Love © <i className='fas fa-heart'></i> <Link href="/">iamaweomse!</Link>
+                        <i className='fas fa-heart' style={{ color: 'red' }}></i> &nbsp;&nbsp;With Love © 2024
                     </div>
                     <ul id="menu-footer-menu"
                         className="footer-link justify-content-center flex-wrap position-relative cus-z1">
