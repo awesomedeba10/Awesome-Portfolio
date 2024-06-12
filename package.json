@@ -21,6 +21,8 @@
     "react": "^18",
     "react-dom": "^18",
     "swiper": "^11.0.7",
+    "velocity-animate": "^1.5.2",
+    "velocity-ui-pack": "^1.2.2",
     "waypoints": "^4.0.1"
   },
   "devDependencies": {

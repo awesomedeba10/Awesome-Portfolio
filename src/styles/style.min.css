@@ -4143,6 +4143,153 @@ iframe {
     }
 }
 
+/**********************************************************************************
+                                Intro Skills Area Start
+**********************************************************************************/
+
+.intro-skills {
+    overflow: hidden;
+    z-index: 1;
+}
+
+.intro-skills .intro-skills-list {
+    margin-right: 1em;
+}
+
+.intro-skills .intro-skills-list .skills-init {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    border-radius: 6px;
+    text-align: center;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.intro-skills .intro-skills-list .skills-init:hover {
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    /* transform: translateY(-2px); */
+}
+
+.intro-skills .code-display::before {
+    content: "Expertise";
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.5em;
+    color: var(--n60);
+    letter-spacing: 8px;
+}
+
+.intro-skills .code-display h1 {
+	color: #333;
+}
+
+.intro-skills .code-description {
+	width: 100%;
+	height: 100%;
+	color: #333;
+}
+
+.intro-skills .code-description * {
+	display: none;
+}
+
+.intro-skills .code-description > div {
+	padding: 0px 40px;
+	font-size: 26px;
+	border-left: 2px solid #dddddd;
+}
+
+.intro-skills .desc-active {
+	display: block;
+	height: 100%;
+	position: relative;
+}
+
+.intro-skills .desc-active > p {
+	display: block;
+	margin: 0;
+    font-size: 18px;
+    color: var(--n0) !important;
+    letter-spacing: 1px;
+}
+
+.intro-skills .desc-active > p > span {
+	display: inline-block;
+	font-size: 18px;
+	width: 125px;
+}
+
+.intro-skills p.code-title {
+    position: relative;
+    font-size: 3em;
+    line-height: 1.2em;
+    padding-bottom: 1rem;
+}
+
+.intro-skills .desc-active::after {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	content: "";
+	opacity: 0.2;
+	z-index: -1;
+}
+
+.intro-skills .backend-desc.desc-active::after {
+	background: url(https://i.imgur.com/Dc8HgeM.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: right center;
+}
+
+.intro-skills .frontend-desc.desc-active::after {
+	background: url(https://i.imgur.com/QcfXSkf.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: right center;
+}
+
+.intro-skills .html-desc.desc-active::after {
+	background: url(https://i.imgur.com/0g3HZSF.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: right center;
+}
+
+.intro-skills .css-desc.desc-active::after {
+	background: url(https://i.imgur.com/poC0TYE.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: right center;
+}
+
+.intro-skills .javascript-desc.desc-active::after {
+	background: url(https://i.imgur.com/QjrmHkb.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: right center;
+}
+
+.intro-skills .gui-desc.desc-active::after {
+	background: url(https://i.imgur.com/YmCqPpk.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: right center;
+}
+
+.intro-skills .seo-desc.desc-active::after {
+	background: url(https://i.imgur.com/V9vAVUO.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: right center;
+}
+
+/**********************************************************************************
+                                Intro Skills Area End
+**********************************************************************************/
+
+
 .backmenu-head {
     display: inline-flex;
 }
@@ -4453,6 +4600,13 @@ svg path {
   height: 10.25rem;
 }
 
+.accordion .exp-points {
+    display: block;
+    height: auto;
+    font-size: 1rem;
+    padding: 5px 0 5px 0;
+}
+
 .accordion li > div {
   position: relative;
   width: 100%;
@@ -4485,6 +4639,8 @@ svg path {
 }
 
 .accordion .accordion_item_inf_text {font-size: 15px;}
+
+.accordion-collapse.show {visibility: visible;}
 
 .line-height-3rem {
     line-height: 3rem;
@@ -4881,13 +5037,13 @@ svg path {
 }
 
 .layla-infoabout {
-    max-width: 684px;
+    max-width: 95%;
 }
 
 .layla-infoabout p {
     font-size: 18px;
     font-weight: 300;
-    color: var(--n0);
+    color: var(--n0) !important;
     opacity: 0.7;
 }
 
