@@ -116,6 +116,154 @@ export const skillsData = {
     ]
 };
 
+export const skillsLayoutsData = [
+    {
+        title: "Languages",
+        specifiedTitle: "Programming Languages",
+        beautifyColorCode: "#16A085",
+        bgImage: "https://ouch-cdn2.icons8.com/6L2RzkFWOz26brBH8rjo-SWhRQQTsaWPpYZveV7Px00/rs:fit:368:368/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNjg2/LzMxZWYyOWNhLTE1/ZmQtNDkzMy04YWNh/LWY2MmRlNWMxOWMx/MS5zdmc.png",
+        skillsSet: [
+            {
+                name: "Python",
+                exp: "4 Years",
+                rating: 5
+            },
+            {
+                name: "Javascript",
+                exp: "3 Years",
+                rating: 4
+            },
+            {
+                name: "PHP",
+                exp: "2 Years",
+                rating: 4
+            },
+            {
+                name: "Scala",
+                exp: "1 Years",
+                rating: 3
+            }
+        ]
+    },
+    {
+        title: "Databases",
+        specifiedTitle: "Databases",
+        beautifyColorCode: "#16A085",
+        bgImage: "https://ouch-cdn2.icons8.com/LtWgfl6E3BaM7RgM798pWbk9ais2SDZV4nrDnBn0FHQ/rs:fit:368:368/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNzIw/LzQ4ZGM3ZjZjLWQz/ZWItNDUxZC05NjM0/LTFlOTMxNTM5MzBh/NC5zdmc.png",
+        skillsSet: [
+            {
+                name: "MySQL",
+                exp: "4 Years",
+                rating: 5
+            },
+            {
+                name: "AWS Athena",
+                exp: "3 Years",
+                rating: 4
+            },
+            {
+                name: "PrestoDB",
+                exp: "2 Years",
+                rating: 4
+            },
+            {
+                name: "PostgreSQL",
+                exp: "1 Years",
+                rating: 3
+            },
+            {
+                name: "Oracle DB",
+                exp: "2 Years",
+                rating: 3
+            }
+        ]
+    },
+    {
+        title: "Machine Learning",
+        specifiedTitle: "ML Tools & Frameworks",
+        beautifyColorCode: "#16A085",
+        bgImage: "https://ouch-cdn2.icons8.com/17rZz5PlKeUg3LgSDxh_9-ugPLrnsRSQFLffhO2jkdU/rs:fit:368:368/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvNzgy/LzdjMzIwZWZmLWIy/NDQtNGRiYy1iNWJi/LThmZDMyNjRmNjdk/My5wbmc.png",
+        skillsSet: [
+            {
+                name: "Python",
+                exp: "4 Years",
+                rating: 4.5
+            },
+            {
+                name: "Javascript",
+                exp: "3 Years",
+                rating: 4.5
+            },
+            {
+                name: "PHP",
+                exp: "2 Years",
+                rating: 4
+            },
+            {
+                name: "Scala",
+                exp: "1 Years",
+                rating: 3
+            }
+        ]
+    },
+    {
+        title: "Platforms",
+        specifiedTitle: "Platforms & BI Tools",
+        beautifyColorCode: "#16A085",
+        bgImage: "https://ouch-cdn2.icons8.com/LP80mQVZ_T5kY_VFd4DWK9D3YFegIu2nodyeiorxBWE/rs:fit:368:368/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvMjAx/L2QyZmIyMTkyLWQ1/ZDctNDI4YS04MzEw/LTc2YjUyZWVmMTli/Zi5wbmc.png",
+        skillsSet: [
+            {
+                name: "Python",
+                exp: "4 Years",
+                rating: 5
+            },
+            {
+                name: "Javascript",
+                exp: "3 Years",
+                rating: 4
+            },
+            {
+                name: "PHP",
+                exp: "2 Years",
+                rating: 4
+            },
+            {
+                name: "Scala",
+                exp: "1 Years",
+                rating: 3
+            }
+        ]
+    },
+    {
+        title: "Professional Skills",
+        specifiedTitle: "Professional Skills",
+        beautifyColorCode: "#16A085",
+        bgImage: "https://ouch-cdn2.icons8.com/_rRdvxGfcV3wzo8d_OQu3fXmHsZEFTq0MgfWug-_CrU/rs:fit:368:368/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvMTAw/MC9mZjU5ZTMwNy1m/N2QwLTRkYjctOTVj/YS05NjMwZjEwZTFj/Yzguc3Zn.png",
+        skillsSet: [
+            {
+                name: "Python",
+                exp: "4 Years",
+                rating: 4.5
+            },
+            {
+                name: "Javascript",
+                exp: "3 Years",
+                rating: 4.5
+            },
+            {
+                name: "PHP",
+                exp: "2 Years",
+                rating: 4
+            },
+            {
+                name: "Scala",
+                exp: "1 Years",
+                rating: 3
+            }
+        ]
+    }
+];
+
 export const educationData = [
     {
         'institutionName': 'Modern Institute of Engineering & Technology (MAKAUT)',

@@ -9,6 +9,7 @@ import initAboutImports from "../../utils/imports/aboutInit";
 import EducationAreaBlock from "../../components/EducationAreaBlock";
 import ExperienceAboutPageBlock from "../../components/ExperienceAboutPageBlock";
 import SocialProfileList from "../../components/SocialProfileList";
+import SkillsLayout from "../../components/SkillsAreaAboutPageBlock";
 
 export default function Home() {
 	useEffect(() => {
@@ -140,114 +141,7 @@ export default function Home() {
 								<span className="d-block mb-xxl-2 mb-3 fw_500 fs-five n0-color">
 									Skills & Tools
 								</span>
-								<div className="position-relative d-flex intro-skills">
-									<div
-										className={`d-grid col-md-3 gap-4 intro-skills-list ${kanit.className}`}
-									>
-										<div
-											className="skills-init gap-4 d-flex align-items-center justify-content-center py-3"
-											data-title="FRONTEND"
-											data-content="frontend-desc"
-											data-color="#16A085"
-										>
-											Languages
-										</div>
-										<div
-											className="skills-init d-flex align-items-center justify-content-center py-3"
-											data-title="HTML5"
-											data-content="html-desc"
-											data-color="#E34C26"
-										>
-											Databases
-										</div>
-										<div className="skills-init d-flex align-items-center justify-content-center py-3">
-											ML Frameworks
-										</div>
-										<div className="skills-init d-flex align-items-center justify-content-center py-3">
-											Platforms
-										</div>
-										<div className="skills-init d-flex align-items-center justify-content-center py-3">
-											Professional Skills
-										</div>
-									</div>
-
-									<div className="position-relative col-md-9 code-display pt-5">
-										<div className="code-description">
-											<div className="backend-desc">
-												<p className="code-title"></p>
-												<p>
-													<span>Duration:</span>4 Years
-												</p>
-												<p>
-													<span>Experience</span>PHP, SQL, NodeJS, Ruby
-												</p>
-												<div className="code-icon"></div>
-											</div>
-											<div className="frontend-desc">
-												<p className="code-title"></p>
-												<p>
-													<span>Duration:</span>6 Years
-												</p>
-												<p>
-													<span>Experience</span>HTML, CSS, Javascript +
-													Branches
-												</p>
-												<div className="code-icon"></div>
-											</div>
-											<div className="html-desc">
-												<p className="code-title"></p>
-												<p>
-													<span>Duration:</span>6 Years
-												</p>
-												<p>
-													<span>Experience</span>HTML5 (most recent)
-												</p>
-												<div className="code-icon"></div>
-											</div>
-											<div className="css-desc">
-												<p className="code-title"></p>
-												<p>
-													<span>Duration:</span>6 Years
-												</p>
-												<p>
-													<span>Experience</span>CSS3 (most recent)
-												</p>
-												<div className="code-icon"></div>
-											</div>
-											<div className="javascript-desc">
-												<p className="code-title"></p>
-												<p>
-													<span>Duration:</span>4 Years
-												</p>
-												<p>
-													<span>Experience</span>Javascript, Jquery, AngularJS,
-													NodeJS
-												</p>
-												<div className="code-icon"></div>
-											</div>
-											<div className="gui-desc">
-												<p className="code-title"></p>
-												<p>
-													<span>Duration:</span>4 Years
-												</p>
-												<p>
-													<span>Experience</span>Wordpress, Custom GUI Creation
-												</p>
-												<div className="code-icon"></div>
-											</div>
-											<div className="seo-desc">
-												<p className="code-title"></p>
-												<p>
-													<span>Duration:</span>4 Years
-												</p>
-												<p>
-													<span>Experience</span>Up-to-date SEO Practices
-												</p>
-												<div className="code-icon"></div>
-											</div>
-										</div>
-									</div>
-								</div>
+								<SkillsLayout></SkillsLayout>
 							</div>
 						</div>
 					</div>

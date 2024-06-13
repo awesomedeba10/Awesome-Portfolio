@@ -48,8 +48,8 @@ export default function initAboutImports() {
                     .children()
                     .velocity("stop", true)
                     .velocity("transition.slideRightBigIn", { stagger: 300 });
-                $(".code-title, .desc-active span").velocity(
-                    { color: title_color },
+                $(".code-title, .desc-active .code-skill-wrapper").velocity(
+                    { borderColor: title_color },
                     { queue: false }
                 );
                 $(".code-title").text(title_name);
