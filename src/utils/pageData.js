@@ -185,22 +185,42 @@ export const skillsLayoutsData = [
         bgImage: "https://ouch-cdn2.icons8.com/17rZz5PlKeUg3LgSDxh_9-ugPLrnsRSQFLffhO2jkdU/rs:fit:368:368/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvNzgy/LzdjMzIwZWZmLWIy/NDQtNGRiYy1iNWJi/LThmZDMyNjRmNjdk/My5wbmc.png",
         skillsSet: [
             {
-                name: "Python",
-                exp: "4 Years",
-                rating: 4.5
+                name: "PySpark",
+                exp: "2 Years",
+                rating: 3
             },
             {
-                name: "Javascript",
+                name: "NumPy & Pandas",
                 exp: "3 Years",
                 rating: 4.5
             },
             {
-                name: "PHP",
+                name: "ScikitLearn",
                 exp: "2 Years",
                 rating: 4
             },
             {
-                name: "Scala",
+                name: "MatplotLib & Seaborn",
+                exp: "1 Years",
+                rating: 3
+            },
+            {
+                name: "ML Algorithms",
+                exp: "1 Years",
+                rating: 3
+            },
+            {
+                name: "OpenCV",
+                exp: "1 Years",
+                rating: 3
+            },
+            {
+                name: "NLP Engineering",
+                exp: "1 Years",
+                rating: 3
+            },
+            {
+                name: "MLOps",
                 exp: "1 Years",
                 rating: 3
             }
@@ -213,24 +233,64 @@ export const skillsLayoutsData = [
         bgImage: "https://ouch-cdn2.icons8.com/LP80mQVZ_T5kY_VFd4DWK9D3YFegIu2nodyeiorxBWE/rs:fit:368:368/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvMjAx/L2QyZmIyMTkyLWQ1/ZDctNDI4YS04MzEw/LTc2YjUyZWVmMTli/Zi5wbmc.png",
         skillsSet: [
             {
-                name: "Python",
-                exp: "4 Years",
+                name: "Tableau",
+                exp: "2 Years",
                 rating: 5
             },
             {
-                name: "Javascript",
-                exp: "3 Years",
-                rating: 4
-            },
-            {
-                name: "PHP",
+                name: "Databricks",
                 exp: "2 Years",
                 rating: 4
             },
             {
-                name: "Scala",
+                name: "Datastudio",
+                exp: "2 Years",
+                rating: 4
+            },
+            {
+                name: "MS Excel",
+                exp: "3 Years",
+                rating: 3
+            },
+            {
+                name: "Airflow",
+                exp: "2 Years",
+                rating: 3
+            },
+            {
+                name: "Metabase",
+                exp: "2 Years",
+                rating: 4
+            },
+            {
+                name: "Superset",
                 exp: "1 Years",
                 rating: 3
+            },
+            {
+                name: "GitHub",
+                exp: "4 Years",
+                rating: 5
+            },
+            {
+                name: "Confluence",
+                exp: "2 Years",
+                rating: 4
+            },
+            {
+                name: "Jira",
+                exp: "2 Years",
+                rating: 4
+            },
+            {
+                name: "Linux",
+                exp: "2 Years",
+                rating: 3
+            },
+            {
+                name: "Postman",
+                exp: "3 Years",
+                rating: 4
             }
         ]
     },
@@ -241,24 +301,59 @@ export const skillsLayoutsData = [
         bgImage: "https://ouch-cdn2.icons8.com/_rRdvxGfcV3wzo8d_OQu3fXmHsZEFTq0MgfWug-_CrU/rs:fit:368:368/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvMTAw/MC9mZjU5ZTMwNy1m/N2QwLTRkYjctOTVj/YS05NjMwZjEwZTFj/Yzguc3Zn.png",
         skillsSet: [
             {
-                name: "Python",
-                exp: "4 Years",
+                name: "Data-Driven Decision Making",
+                exp: "2 Years",
                 rating: 4.5
             },
             {
-                name: "Javascript",
+                name: "Predictive Modeling",
                 exp: "3 Years",
                 rating: 4.5
             },
             {
-                name: "PHP",
+                name: "Statistical Analysis",
                 exp: "2 Years",
-                rating: 4
+                rating: 4.5
             },
             {
-                name: "Scala",
-                exp: "1 Years",
-                rating: 3
+                name: "Data Visualization",
+                exp: "2 Years",
+                rating: 3.5
+            },
+            {
+                name: "Business Intelligence (BI) Tolls",
+                exp: "2 Years",
+                rating: 3.5
+            },
+            {
+                name: "Insight Reporting",
+                exp: "2 Years",
+                rating: 3.5
+            },
+            {
+                name: "Financial Modelling",
+                exp: "2 Years",
+                rating: 3.5
+            },
+            {
+                name: "ETL Processes",
+                exp: "2 Years",
+                rating: 3.5
+            },
+            {
+                name: "Agile Methodologies",
+                exp: "3 Years",
+                rating: 3.5
+            },
+            {
+                name: "Query Optimization Techniques",
+                exp: "3 Years",
+                rating: 3.5
+            },
+            {
+                name: "API Development",
+                exp: "3 Years",
+                rating: 0.5
             }
         ]
     }

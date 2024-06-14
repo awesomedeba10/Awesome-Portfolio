@@ -43,7 +43,7 @@ export default function SkillsLayout() {
 									<div className="code-skill-wrapper" key={`${index}${index2}`}>
 										<div>
 											<p>{set.name}</p>
-											<span class="rating-value" rating-value={set.rating}></span>
+											{/* <span claxss="rating-value" rating-value={set.rating}></span> */}
 											<span className={`badge-wrapper ${kanit.className}`}
                                             style={{ background: skill.beautifyColorCode }}>{set.exp}</span>
 										</div>
