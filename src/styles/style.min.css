@@ -4197,11 +4197,12 @@ iframe {
 }
 
 .intro-skills p.code-title {
-	position: relative;
-	font-size: 4rem;
-	line-height: 1.2em;
-	padding-bottom: 1rem;
-	letter-spacing: 2px;
+    position: relative;
+    font-size: 3.5rem;
+    line-height: 3rem;
+    padding-bottom: 1rem;
+    letter-spacing: 2px;
+    color: var(--n2) !important;
 }
 
 .intro-skills .skills-bg {
@@ -4216,15 +4217,16 @@ iframe {
 }
 
 .intro-skills .code-skill-wrapper {
-	margin: 10px 0 0 0;
-	display: flex !important;
-	justify-content: flex-start;
-	width: 9.5rem;
-	border: 1px solid #cccccc;
-	background: #fff;
-	border-radius: 10px;
-	position: relative;
-	padding: 5px 8px 5px 10px;
+    margin: 10px 10px 0 0;
+    display: flex !important;
+    justify-content: flex-start;
+    width: fit-content;
+    border: 1px solid #cccccc;
+    background: #fff;
+    border-radius: 10px;
+    position: relative;
+    padding: 3px 10px 5px 10px;
+    height: fit-content;
 }
 
 .intro-skills section p {
@@ -4233,24 +4235,25 @@ iframe {
 }
 
 .intro-skills section p:first-of-type {
-	font-weight: 500;
-	font-size: 0.8rem;
-	padding-left: 5px;
-	color: var(--n1) !important;
+    font-weight: 500;
+    font-size: 0.8rem;
+    padding-left: 5px;
+    color: var(--n1) !important;
+    padding-top: 5px;
 }
 
 .intro-skills .badge-wrapper {
-	text-align: center;
-	padding: 6px 8px;
-	text-transform: uppercase;
-	color: #ffffff;
-	border-radius: 10px;
-	position: absolute;
-	top: -20px;
-	right: -26px;
-	font-size: 11px;
-	letter-spacing: 1.5px;
-	font-weight: 600;
+    text-align: center;
+    padding: 4px 5px;
+    text-transform: uppercase;
+    color: #ffffff;
+    border-radius: 10px;
+    position: absolute;
+    top: -17px;
+    right: -22px;
+    font-size: 10px;
+    letter-spacing: 1.2px;
+    font-weight: 600;
 }
 
 .intro-skills .rating-value[rating-value="1"] {

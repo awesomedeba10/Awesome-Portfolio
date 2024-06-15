@@ -11,26 +11,16 @@ export default function initAboutImports() {
 	function hex_initial_animation() {
 		$(".skills-init").velocity("transition.expandIn", {
 			stagger: 150,
+            complete: function() {
+                // Calling mouseenter on the first element of .skills-init
+                $('.skills-init').first().trigger('mouseenter');
+            }
 		});
 		$(".skills-init").velocity("callout.pulse");
 	}
 	hex_initial_animation();
 
-	// var hoverdetect = setInterval(function () {
-	// 	hovernotify();
-	// }, 3000);
-	// function hovernotify() {
-	// 	$(".hover-notify").velocity("callout.tada");
-	// }
-
-	// function myStopFunction() {
-	// 	$(".hover-notify").velocity("stop", true).velocity("fadeOut");
-	// 	// clearInterval(hoverdetect);
-	// }
-
     $('.skills-init').on('mouseenter', function () {
-        // myStopFunction();
-
         var title_color = $(this).attr("data-color");
         var title_name = $(this).attr("data-title");
         var desc_name = $(this).attr("data-content");
@@ -57,12 +47,6 @@ export default function initAboutImports() {
         }
 
         hex_description();
-
-        // $(this).addClass("hexactive");
-        // $(".hexactive").velocity(
-        //     { scaleX: "1.1", scaleY: "1.1" },
-        //     { duration: 200 }
-        // );
     }).on('mouseleave', function () {
         $(".hexactive")
             .velocity("stop", true)

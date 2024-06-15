@@ -12,7 +12,7 @@ export default function SkillsLayout() {
 	return (
 		<div className="position-relative d-flex intro-skills">
 			<div
-				className={`d-grid col-md-3 gap-4 intro-skills-list ${kanit.className}`}
+				className={`d-grid col-md-3 gap-3 intro-skills-list ${kanit.className}`}
 			>
 				{skillsLayoutsData.map((skill, index) => (
 					<div
@@ -37,7 +37,7 @@ export default function SkillsLayout() {
 							key={index}
 							className={`${skill.title.toLowerCase().replace(/ /g, "-")}-desc`}
 						>
-							<p className="code-title"></p>
+							<p className={`code-title ${kanit.className}`}></p>
 							<section className="d-grid gap-3 code-skills pt-2">
 								{skill.skillsSet.map((set, index2) => (
 									<div className="code-skill-wrapper" key={`${index}${index2}`}>
@@ -55,7 +55,7 @@ export default function SkillsLayout() {
 								style={
 									activeSkill === index
 										? {
-												background: `url(${skill.bgImage}) no-repeat right center / contain`,
+												background: `url(${skill.bgImage}) no-repeat right center / 50%`,
 										  }
 										: {}
 								}
